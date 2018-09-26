@@ -4,22 +4,26 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 4em;
   font-size: 2em;
   font-family: Source Code Pro;
   text-align: left;
-  background-color: #FCE8E8;
-  padding-top: 37vh;
+  background-color: white; /*#FCE8E8;*/
+}
 
+::selection {
+  background: #FFDF00;
 }
 
 p {
   margin: 0px;
-  padding: 0px;
-  padding-left: 10vw;
-  padding-right: 55vw;
+  padding-right: 50vw;
   font-weight: 200;
   white-space: pre-wrap;
+}
+
+.top {
+  padding-top: 25vh;
 }
 
 .normal {
@@ -29,4 +33,26 @@ p {
 bold {
   font-weight: 200;
   font-size: 3em;
+}
+
+a {
+  float: right;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+
+.icon svg {
+  padding-right: 1em;
+  font-size: .7em;
+  width: 2em;
+  transition: .3s;
+  stroke: black;
+}
+
+.icon svg:hover{
+  opacity: 1;
+  stroke: #FFDF00;
 }
