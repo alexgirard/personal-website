@@ -1,0 +1,104 @@
+{
+  "extract-css-chunks-webpack-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/sass-loader/lib/loader.js??ref--5-2!main.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "extract-css-chunks-webpack-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "multi node_modules/next/dist/client/next": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/HKKDfZQoldtKcJRTGMrUf/pages/_app.js": 2,
+      "static/HKKDfZQoldtKcJRTGMrUf/pages/_error.js": 3,
+      "static/HKKDfZQoldtKcJRTGMrUf/pages/about.js": 4,
+      "static/HKKDfZQoldtKcJRTGMrUf/pages/contact.js": 5,
+      "static/HKKDfZQoldtKcJRTGMrUf/pages/dance.js": 6,
+      "static/HKKDfZQoldtKcJRTGMrUf/pages/experience.js": 7,
+      "static/HKKDfZQoldtKcJRTGMrUf/pages/index.js": 8,
+      "static/HKKDfZQoldtKcJRTGMrUf/pages/music.js": 9,
+      "static/runtime/main.js": 10,
+      "static/_1UWGjoK6emTMfIp_8ojY/pages/_app.js": 11,
+      "static/_1UWGjoK6emTMfIp_8ojY/pages/_error.js": 12,
+      "static/_1UWGjoK6emTMfIp_8ojY/pages/about.js": 13,
+      "static/_1UWGjoK6emTMfIp_8ojY/pages/contact.js": 14,
+      "static/_1UWGjoK6emTMfIp_8ojY/pages/dance.js": 15,
+      "static/_1UWGjoK6emTMfIp_8ojY/pages/experience.js": 16,
+      "static/_1UWGjoK6emTMfIp_8ojY/pages/index.js": 17,
+      "static/_1UWGjoK6emTMfIp_8ojY/pages/music.js": 18,
+      "static/7KTfpfoB8fqIIPxbqwgUr/pages/_app.js": 2,
+      "static/7KTfpfoB8fqIIPxbqwgUr/pages/_error.js": 3,
+      "static/7KTfpfoB8fqIIPxbqwgUr/pages/about.js": 4,
+      "static/7KTfpfoB8fqIIPxbqwgUr/pages/contact.js": 5,
+      "static/7KTfpfoB8fqIIPxbqwgUr/pages/dance.js": 6,
+      "static/7KTfpfoB8fqIIPxbqwgUr/pages/experience.js": 7,
+      "static/7KTfpfoB8fqIIPxbqwgUr/pages/index.js": 8,
+      "static/7KTfpfoB8fqIIPxbqwgUr/pages/music.js": 9,
+      "static/5QXBsMFBoJrYM7dlxFMeJ/pages/_app.js": 11,
+      "static/5QXBsMFBoJrYM7dlxFMeJ/pages/_error.js": 12,
+      "static/5QXBsMFBoJrYM7dlxFMeJ/pages/about.js": 13,
+      "static/5QXBsMFBoJrYM7dlxFMeJ/pages/contact.js": 14,
+      "static/5QXBsMFBoJrYM7dlxFMeJ/pages/dance.js": 15,
+      "static/5QXBsMFBoJrYM7dlxFMeJ/pages/experience.js": 16,
+      "static/5QXBsMFBoJrYM7dlxFMeJ/pages/index.js": 17,
+      "static/5QXBsMFBoJrYM7dlxFMeJ/pages/music.js": 18,
+      "static/HQ5joJ09DKmBuVqGhbBOx/pages/_app.js": 2,
+      "static/HQ5joJ09DKmBuVqGhbBOx/pages/_error.js": 3,
+      "static/HQ5joJ09DKmBuVqGhbBOx/pages/about.js": 4,
+      "static/HQ5joJ09DKmBuVqGhbBOx/pages/contact.js": 5,
+      "static/HQ5joJ09DKmBuVqGhbBOx/pages/dance.js": 6,
+      "static/HQ5joJ09DKmBuVqGhbBOx/pages/experience.js": 7,
+      "static/HQ5joJ09DKmBuVqGhbBOx/pages/index.js": 8,
+      "static/HQ5joJ09DKmBuVqGhbBOx/pages/music.js": 9,
+      "static/bUxOq_rh4ic4E_AfAEI1s/pages/_app.js": 11,
+      "static/bUxOq_rh4ic4E_AfAEI1s/pages/_error.js": 12,
+      "static/bUxOq_rh4ic4E_AfAEI1s/pages/about.js": 13,
+      "static/bUxOq_rh4ic4E_AfAEI1s/pages/contact.js": 14,
+      "static/bUxOq_rh4ic4E_AfAEI1s/pages/dance.js": 15,
+      "static/bUxOq_rh4ic4E_AfAEI1s/pages/experience.js": 16,
+      "static/bUxOq_rh4ic4E_AfAEI1s/pages/index.js": 17,
+      "static/bUxOq_rh4ic4E_AfAEI1s/pages/music.js": 18,
+      "static/Uae5bQX~3RC0BOkynnUBS/pages/_app.js": 2,
+      "static/Uae5bQX~3RC0BOkynnUBS/pages/_error.js": 3,
+      "static/Uae5bQX~3RC0BOkynnUBS/pages/about.js": 4,
+      "static/Uae5bQX~3RC0BOkynnUBS/pages/contact.js": 5,
+      "static/Uae5bQX~3RC0BOkynnUBS/pages/dance.js": 6,
+      "static/Uae5bQX~3RC0BOkynnUBS/pages/experience.js": 7,
+      "static/Uae5bQX~3RC0BOkynnUBS/pages/index.js": 8,
+      "static/Uae5bQX~3RC0BOkynnUBS/pages/music.js": 9
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
