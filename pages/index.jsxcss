@@ -1,6 +1,6 @@
 section {
   font-size: 64px;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .module {
