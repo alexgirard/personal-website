@@ -25,8 +25,7 @@
     "export": "npm run build && next export",
     "total": "npm run build && next export && next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"www.alexgirard.com\" >> out/CNAME && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"
