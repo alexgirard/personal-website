@@ -1,0 +1,79 @@
+section {
+  height: 100%;
+}
+
+.fade-up {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.module {
+  max-width: 900px;
+}
+
+h1 {
+  font-size: 144px;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  // text-shadow: -1px -1px 0 #FFC328, 1px -1px 0 #FFC328, -1px 1px 0 #FFC328, 1px 1px 0 #FFC328;
+  color: #FFC328;
+}
+
+.side {
+  display: flex;
+}
+
+.icons {
+  padding-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+svg {
+  padding: 0 1rem;
+}
+
+// mobile
+@media screen and (max-width: 600px) {
+  .side {
+    display: block;
+  }
+
+  .icons {
+    padding: 2rem 0;
+    justify-content: center;
+  }
+
+  .module {
+    max-width: 83vw;
+  }
+
+  svg {
+    padding: 0 1rem 0 0;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
+
+// animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}

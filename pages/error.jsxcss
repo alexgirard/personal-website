@@ -1,0 +1,16 @@
+section {
+  background-color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+:global(home-link) {
+  text-decoration: underline;
+}
+
+:global(home-link:hover) {
+  color: #F4C900
+}

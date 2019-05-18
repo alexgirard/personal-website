@@ -1,0 +1,39 @@
+section {
+  background-color: #E5E5E5;
+  height: auto;
+  animation: background-fade-in 1s;
+  text-align: center;
+}
+
+.module {
+  width: auto;
+}
+
+h1 {
+  font-size: 144px;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+iframe {
+  padding: 2rem;
+}
+
+
+// mobile
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  iframe {
+    padding: 2rem 0;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+}
