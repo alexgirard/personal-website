@@ -8,7 +8,7 @@ import HomeSymbol from '../components/HomeSymbol';
 const Contact = () => (
   <React.Fragment>
     <style jsx>{styles}</style>
-    <HomeSymbol fill="transparent"/>
+    <HomeSymbol />
     <section>
       <div className="module center-div fade-up">
         <h1>C o n t a c t</h1>
