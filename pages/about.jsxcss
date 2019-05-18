@@ -6,7 +6,7 @@ section {
 }
 
 .module {
-  width: 850px;
+  max-width: 850px;
 }
 
 h1 {
@@ -38,6 +38,13 @@ p {
 
 .desc {
   padding-left: 4rem;
+}
+
+// iPad
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .module {
+    max-width: 600px;
+  }
 }
 
 // mobile
