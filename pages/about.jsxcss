@@ -47,7 +47,7 @@ p {
   }
 
   .module {
-    width: 85vw;
+    width: 100%;
     padding-top: 3rem;
   }
 

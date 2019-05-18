@@ -1,5 +1,6 @@
 section {
   height: 100%;
+  padding: 50px 30px;
 }
 
 .fade-up {
@@ -48,8 +49,18 @@ svg {
     justify-content: center;
   }
 
+  .icon-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  section {
+    height: auto;
+  }
+
   .module {
-    max-width: 83vw;
+    padding-top: 5rem;
   }
 
   svg {
