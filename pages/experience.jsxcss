@@ -4,6 +4,7 @@ section {
   overflow: auto;
   -ms-overflow-style: none;  /* IE 10+ */
   scrollbar-width: none;  /* Firefox */
+  animation: background-fade-in 1s;
 }
 
 section::-webkit-scrollbar {
@@ -89,4 +90,11 @@ h2:after {
   h1 {
     font-size: 40px;
   }
+}
+
+// animations
+@keyframes background-fade-in {
+  0% { background-color: white; }
+  50% { background-color: white; }
+  100% { background-color: #1E1C1C;}
 }

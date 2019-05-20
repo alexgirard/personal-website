@@ -37,3 +37,10 @@ iframe {
     padding: 50px 0;
   }
 }
+
+// animations
+@keyframes background-fade-in {
+  0% { background-color: white; }
+  50% { background-color: white; }
+  100% { background-color: #E5E5E5;}
+}

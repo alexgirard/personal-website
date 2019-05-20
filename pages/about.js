@@ -16,7 +16,7 @@ const About = () => (
           <h1>M e</h1>
           <div className="desc">
             <p>
-              Hello <span role="img" aria-label="wave">👋</span> my name is Alexandra Girard I am a 2B
+              Hello <span role="img" aria-label="wave">👋</span> my name is Alexandra Girard and I am a 2B
               software engineering student at the University of Waterloo.
             </p>
             <p>
@@ -28,7 +28,7 @@ const About = () => (
               <NextLink href="/music" classes="p-link">music</NextLink>
               ,
               robotics and web development. I am an avid coffee drinker,
-              movie lover and romantic at heart.
+              movie lover and romantic at heart &lt;3.
             </p>
             <p>
               Click

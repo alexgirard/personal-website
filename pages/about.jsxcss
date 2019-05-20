@@ -1,5 +1,4 @@
 section {
-  padding: 50px 50px;
   background-color: #E5E5E5;
   height: 100%;
   animation: background-fade-in 1s;
@@ -72,4 +71,4 @@ p {
   0% { background-color: white; }
   50% { background-color: white; }
   100% { background-color: #E5E5E5;}
-  }
+}
