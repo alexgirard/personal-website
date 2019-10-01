@@ -1,22 +1,26 @@
 import React from 'react';
+import styled from 'styled-components';
+import { FlexContainer } from '../components/Styles';
+import Link from '../components/Link';
+import '../main.scss';
 
-import styles from './error.jsxcss';
+const ErrorWrapper = styled.div`
+  text-align: center;
+  margin: 8rem 0;
 
-import NextLink from '../components/NextLink';
-import HomeSymbol from '../components/HomeSymbol';
+  & > * {
+    padding: 0.5rem 0;
+  }
+`;
 
-const Dance = () => (
-  <React.Fragment>
-    <style jsx>{styles}</style>
-    <HomeSymbol />
-    <section>
-      <div className="module center-div">
-        <h2>⚠️ Page Not Found ⚠️</h2>
-        <p>Sorry, we couldn't find that page!</p>
-        <NextLink href="/" classes="home-link">return to homepage</NextLink>
-      </div>
-    </section>
-  </React.Fragment>
+const Error404 = () => (
+  <FlexContainer justify="center">
+    <ErrorWrapper>
+      <h1>⚠️ Page Not Found ⚠️</h1>
+      <p>Sorry, we couldn't find that page!</p>
+      <Link href="/">Return to homepage</Link>
+    </ErrorWrapper>
+  </FlexContainer>
 );
 
-export default Dance;
+export default Error404;
