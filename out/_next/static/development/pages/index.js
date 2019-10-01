@@ -1,328 +1,57 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
-/***/ "./components/BodySection.jsx":
-/*!************************************!*\
-  !*** ./components/BodySection.jsx ***!
-  \************************************/
+/***/ "./components/Content.jsx":
+/*!********************************!*\
+  !*** ./components/Content.jsx ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-
-
-/* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "BodySection",
-  componentId: "uwxt0r-0"
-})(["padding:5rem 16rem;color:black;font-size:22px;letter-spacing:2px;@media screen and (max-width:", "px){padding:5rem 12rem;}@media screen and (max-width:", "px){padding:5rem 8rem;font-size:16px;}@media screen and (max-width:", "px){padding:2.5rem 6rem;}@media screen and (max-width:", "px){padding:2.5rem 4rem;}@media screen and (max-width:", "px){padding:1.5rem 2rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].smallMobile));
-
-/***/ }),
-
-/***/ "./components/Button.jsx":
-/*!*******************************!*\
-  !*** ./components/Button.jsx ***!
-  \*******************************/
-/*! exports provided: Button, DarkButton */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DarkButton", function() { return DarkButton; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components_NextLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/NextLink */ "./components/NextLink.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/Button.jsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/Content.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100%;\n  max-width: 1000px;\n\n  @media screen and (max-width: ", "px) {\n    padding: 0 2rem;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
 
 
 
+var Body = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallScreen);
 
-var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "Button__StyledButton",
-  componentId: "cxv2rm-0"
-})(["display:inline-block;font-size:20px;cursor:pointer;user-select:none;border:2px solid black;color:black;padding:0.8rem 5rem;transition:all 0.2s;:hover{background-color:black;border-color:black;color:", ";}@media screen and (max-width:", "px){padding:0.6rem 4rem;}@media screen and (max-width:", "px){padding:0.5rem 3rem;font-size:16px;}@media screen and (max-width:", "px){padding:0.4rem 2rem;}@media screen and (max-width:", "px){padding:0.3rem 1.5rem;font-size:12px;}@media screen and (max-width:", "px){padding:0.2rem 1rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"], _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallMobile);
-var StyledDarkButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(StyledButton).withConfig({
-  displayName: "Button__StyledDarkButton",
-  componentId: "cxv2rm-1"
-})(["border:2px solid white;color:white;:hover{background-color:white;border-color:white;color:black;}"]);
-/**
- * @param {{
- *   children: React.ReactNode;
- *   href: string;
- *   external?: boolean;
- * }} props
- */
-
-var Button = function Button(props) {
-  return __jsx(_components_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: props.href,
-    external: props.external,
+var Content = function Content(_ref) {
+  var children = _ref.children;
+  return __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"], {
+    justify: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 14
     },
     __self: this
-  }, __jsx(StyledButton, {
+  }, __jsx(Body, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 15
     },
     __self: this
-  }, props.children));
-};
-var DarkButton = function DarkButton(props) {
-  return __jsx(_components_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: props.href,
-    external: props.external,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, __jsx(StyledDarkButton, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, props.children));
+  }, children));
 };
 
-/***/ }),
-
-/***/ "./components/CalendarIcon.jsx":
-/*!*************************************!*\
-  !*** ./components/CalendarIcon.jsx ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/CalendarIcon.jsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-var getMonthAbbreviation = function getMonthAbbreviation(monthNumber) {
-  if (monthNumber < 1 || monthNumber > 12) {
-    throw "Month number is out of range (expected between 1 and 12, got ".concat(monthNumber, ")");
-  }
-
-  return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'][monthNumber - 1];
-};
-
-var CalendarBorder = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "CalendarIcon__CalendarBorder",
-  componentId: "mm0qdq-0"
-})(["display:flex;flex-direction:column;flex-wrap:nowrap;align-items:center;width:62px;height:56px;border-radius:6px;background-color:black;"]);
-var MonthText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "CalendarIcon__MonthText",
-  componentId: "mm0qdq-1"
-})(["font-size:12px;height:13px;margin:2px;color:white;font-weight:bold;letter-spacing:1px;text-align:center;"]);
-var DayContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "CalendarIcon__DayContainer",
-  componentId: "mm0qdq-2"
-})(["display:flex;justify-content:center;align-items:center;background-color:white;height:34px;width:50px;"]);
-var DayText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "CalendarIcon__DayText",
-  componentId: "mm0qdq-3"
-})(["font-size:24px;font-weight:bold;letter-spacing:2px;color:black;"]);
-/**
- * @param {{
- *   month: number,
- *   day: number
- * }} props
- */
-
-/* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return __jsx(CalendarBorder, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, __jsx(MonthText, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }, getMonthAbbreviation(props.month)), __jsx(DayContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, __jsx(DayText, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, props.day)));
-});
-
-/***/ }),
-
-/***/ "./components/CenteredSection.jsx":
-/*!****************************************!*\
-  !*** ./components/CenteredSection.jsx ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _BodySection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BodySection */ "./components/BodySection.jsx");
-/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(_BodySection__WEBPACK_IMPORTED_MODULE_1__["default"]).withConfig({
-  displayName: "CenteredSection",
-  componentId: "zm25cw-0"
-})(["padding:5rem 32rem;text-align:center;color:white;background-image:url(", ");background-size:cover;background-attachment:fixed;background-repeat:no-repeat;background-color:rgba(0,0,0,0.7);background-position:center;background-blend-mode:darken;@media screen and (max-width:", "px){padding:5rem 16rem;}@media screen and (max-width:", "px){padding:5rem 12rem;}@media screen and (max-width:", "px){padding:2.5rem 8rem;}@media screen and (max-width:", "px){padding:2.5rem 5rem;}@media screen and (max-width:", "px){padding:1.5rem 4rem;}"], function (props) {
-  return props.imageUrl;
-}, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallMobile));
-
-/***/ }),
-
-/***/ "./components/Event.jsx":
-/*!******************************!*\
-  !*** ./components/Event.jsx ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _CalendarIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CalendarIcon */ "./components/CalendarIcon.jsx");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/Event.jsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-var getMonthFullName = function getMonthFullName(monthNumber) {
-  if (monthNumber < 1 || monthNumber > 12) {
-    throw "Month number is out of range (expected between 1 and 12, got ".concat(monthNumber, ")");
-  }
-
-  return ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][monthNumber - 1];
-};
-
-var getDayFullName = function getDayFullName(dayNumber) {
-  if (dayNumber < 1 || dayNumber > 31) {
-    throw "Day number is out of range (expected between 1 and 31, got ".concat(dayNumber, ")");
-  }
-
-  switch (dayNumber) {
-    case 1:
-    case 21:
-    case 31:
-      return "".concat(dayNumber, "st");
-
-    case 2:
-    case 22:
-      return "".concat(dayNumber, "nd");
-
-    case 3:
-    case 23:
-      return "".concat(dayNumber, "rd");
-
-    default:
-      return "".concat(dayNumber, "th");
-  }
-};
-
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "Event__Container",
-  componentId: "sc-1rrmtcw-0"
-})(["display:flex;"]);
-var CalendarIconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "Event__CalendarIconContainer",
-  componentId: "sc-1rrmtcw-1"
-})(["margin-right:2rem;"]);
-var DateHeader = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
-  displayName: "Event__DateHeader",
-  componentId: "sc-1rrmtcw-2"
-})(["font-weight:bold;"]);
-/**
- * @param {{
- *   month: number;
- *   day: number;
- *   dayOfWeek: string;
- *   children: React.ReactNode;
- * }} props
- */
-
-/* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Container, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: this
-  }, __jsx(CalendarIconContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, __jsx(_CalendarIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    month: props.month,
-    day: props.day,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  })), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, __jsx(DateHeader, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, props.dayOfWeek, ", ", getMonthFullName(props.month), ' ', getDayFullName(props.day)), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }), props.children)), props.space && __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81
-    },
-    __self: this
-  }), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81
-    },
-    __self: this
-  })));
-});
+/* harmony default export */ __webpack_exports__["default"] = (Content);
 
 /***/ }),
 
@@ -340,137 +69,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _NextLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NextLink */ "./components/NextLink.js");
 /* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/Footer.jsx";
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/Footer.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-var FooterContainer = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"]).withConfig({
-  displayName: "Footer__FooterContainer",
-  componentId: "sc-1ju438-0"
-})(["background-color:black;"]);
-var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "Footer__Logos",
-  componentId: "sc-1ju438-1"
-})(["color:white;font-size:46px;a > i{padding:0.8rem;transition:all 0.2s;:hover{color:", ";}}:last-child{margin-right:0.5rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"]);
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx(FooterContainer, {
+
+var Footer = function Footer(_ref) {
+  var children = _ref.children;
+  return __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["LineWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 7
     },
     __self: this
-  }, __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: "/",
+  }, __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"], {
+    justify: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 8
     },
     __self: this
-  }, __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["Logo"], {
-    width: "300px",
-    src: "/static/logo_w.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  })), __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["Spacer"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }), __jsx(Logos, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: "mailto:uwvexu@gmail.com",
-    external: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, __jsx("i", {
-    className: "fa fa-envelope",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: "",
-    external: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, __jsx("i", {
-    className: "fa fa-facebook-f",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: "https://github.com/uwvexu",
-    external: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, __jsx("i", {
-    className: "fa fa-github",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: "",
-    external: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, __jsx("i", {
-    className: "fa fa-slack",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: "https://www.youtube.com/channel/UCFgWl2UgswX70xiXT8QJlEg",
-    external: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, __jsx("i", {
-    className: "fa fa-youtube-play",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }))));
-});
+  }, children));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
 
 /***/ }),
 
-/***/ "./components/Form.js":
+/***/ "./components/Head.js":
 /*!****************************!*\
-  !*** ./components/Form.js ***!
+  !*** ./components/Head.js ***!
   \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -479,419 +109,395 @@ var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCo
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _FormFields__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FormFields */ "./components/FormFields.jsx");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/Form.js";
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/Head.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-var Form = function Form() {
-  return __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["StyledForm"], {
-    action: "https://formspree.io/uwvexu@gmail.com",
-    method: "POST",
+var Head = function Head() {
+  return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["FlexRow"], {
+  }, "Alex Girard"), __jsx("meta", {
+    name: "description",
+    content: "Developer. Dancer. Robotics enthusiast. Coffee adict.",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["Input"], {
-    type: "text",
-    placeholder: "NAME",
-    name: "name",
-    required: true,
+  }), __jsx("meta", {
+    name: "keywords",
+    content: "Developer,Frontend,Frontend Developer,Student,Waterloo,Code,Software Engineering",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }), __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["Input"], {
-    type: "text",
-    placeholder: "EMAIL",
-    name: "email",
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  })), __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["FlexRow"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["Input"], {
-    type: "tel",
-    placeholder: "PHONE NUMBER",
-    name: "phone",
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }), __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["Select"], {
-    name: "occupation",
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, __jsx("option", {
-    value: "",
-    disabled: true,
-    selected: true,
-    hidden: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, "OCCUPATION"), __jsx("option", {
-    value: "student",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, "Student"), __jsx("option", {
-    value: "sponsor",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "Sponsor"), __jsx("option", {
-    value: "other",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "Other"))), __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["FlexRow"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["TextArea"], {
-    name: "message",
-    placeholder: "MESSAGE",
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  })), __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["FlexRow"], {
-    end: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, __jsx(_FormFields__WEBPACK_IMPORTED_MODULE_2__["SendButton"], {
-    type: "submit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, "SEND")));
+  }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Form);
+/* harmony default export */ __webpack_exports__["default"] = (Head);
 
 /***/ }),
 
-/***/ "./components/FormFields.jsx":
-/*!***********************************!*\
-  !*** ./components/FormFields.jsx ***!
-  \***********************************/
-/*! exports provided: FlexRow, StyledForm, Input, Select, TextArea, SendButton */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlexRow", function() { return FlexRow; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledForm", function() { return StyledForm; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return Input; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Select", function() { return Select; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextArea", function() { return TextArea; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SendButton", function() { return SendButton; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-
-
-
-var FlexRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "FormFields__FlexRow",
-  componentId: "skpclf-0"
-})(["display:flex;flex-direction:row;padding-top:1rem;justify-content:", ";*{flex:1;}> *:not(:first-child){margin-left:1rem;> button{justify-content:flex-end;}}"], function (props) {
-  return props.end ? "flex-end" : "flex-start";
-});
-var StyledForm = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].form.withConfig({
-  displayName: "FormFields__StyledForm",
-  componentId: "skpclf-1"
-})(["margin-top:2rem;"]);
-var Input = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input.withConfig({
-  displayName: "FormFields__Input",
-  componentId: "skpclf-2"
-})(["outline:none;color:black;font-size:18px;border:2px solid black;padding:0.6rem 1rem;::placeholder{color:#808080;}"]);
-var Select = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].select.withConfig({
-  displayName: "FormFields__Select",
-  componentId: "skpclf-3"
-})(["outline:none;appearance:none;background:transparent;font-size:18px;border:2px solid black;border-radius:0px !important;padding:0.6rem 1rem;&:invalid{color:gray;}:after{font-family:FontAwesome;content:'\f107';font-size:28px;position:absolute;top:10px;right:20px;color:#434B67;pointer-events:none;"]);
-var TextArea = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].textarea.withConfig({
-  displayName: "FormFields__TextArea",
-  componentId: "skpclf-4"
-})(["outline:none;min-height:100px;max-width:100%;color:black;font-size:18px;border:2px solid black;padding:0.6rem 1rem;::placeholder{color:#808080;}"]);
-var SendButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.withConfig({
-  displayName: "FormFields__SendButton",
-  componentId: "skpclf-5"
-})(["all:unset;font-size:20px;font-weight:bold;cursor:pointer;user-select:none;border:2px solid black;color:white;background-color:black;padding:0.6rem 4rem;transition:all 0.2s;:hover{color:", ";}}"], _Styles__WEBPACK_IMPORTED_MODULE_2__["yellow"]);
-
-
-/***/ }),
-
-/***/ "./components/HeaderSection.jsx":
-/*!**************************************!*\
-  !*** ./components/HeaderSection.jsx ***!
-  \**************************************/
+/***/ "./components/Hero.js":
+/*!****************************!*\
+  !*** ./components/Hero.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/HeaderSection.jsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
+/* harmony import */ var _RecordPlayer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./RecordPlayer */ "./components/RecordPlayer.js");
 
 
 
-var HeaderContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "HeaderSection__HeaderContainer",
-  componentId: "mjkebd-0"
-})(["background-color:black;position:relative;height:7rem;@media screen and (max-width:", "px){height:4.5rem;}@media screen and (max-width:", "px){height:3rem;}@media screen and (max-width:", "px){height:2.5rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallMobile);
-var HeaderText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "HeaderSection__HeaderText",
-  componentId: "mjkebd-1"
-})(["font-size:80px;color:white;font-weight:bold;margin:0 16rem;bottom:-18px;position:absolute;letter-spacing:8px;@media screen and (max-width:", "px){margin:0 12rem;}@media screen and (max-width:", "px){margin:0 8rem;font-size:50px;letter-spacing:6px;bottom:-12px;}@media screen and (max-width:", "px){margin:0 6rem;font-size:28px;letter-spacing:4px;bottom:-6px;}@media screen and (max-width:", "px){margin:0 4rem;}@media screen and (max-width:", "px){margin:0 2rem;font-size:24px;letter-spacing:2px;bottom:-6px;}"], _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallMobile);
-/**
- * The header for a section of the page
- * @param {{
- *   children: React.ReactNode;
- *   id?: string;
- * }} props
- */
 
-/* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return __jsx(HeaderContainer, {
-    id: props.id,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: this
-  }, __jsx(HeaderText, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }, props.children));
-});
+
+
+
+
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/Hero.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_7__["default"])(["\n  margin: 4rem 0;\n  justify-content: center;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+var Background = Object(styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_10__["FlexContainer"])(_templateObject());
+
+var Hero =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Hero, _React$Component);
+
+  function Hero() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Hero);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Hero)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+      token: "",
+      deviceId: "",
+      loggedIn: false,
+      error: "",
+      trackName: "Track Name",
+      artistName: "Artist Name",
+      playing: false,
+      position: 0,
+      duration: 0
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Hero, [{
+    key: "getNowPlaying",
+    value: function getNowPlaying() {
+      var _this2 = this;
+
+      var spotifyApi = this.props.spotifyApi;
+      spotifyApi.getMyCurrentPlaybackState().then(function (response) {
+        _this2.setState({
+          trackName: response.item.name,
+          artistName: response.item.artist
+        });
+      });
+    }
+  }, {
+    key: "onPlayClick",
+    value: function onPlayClick() {
+      var spotifyApi = this.props.spotifyApi;
+      spotifyApi.play();
+    }
+  }, {
+    key: "onPauseClick",
+    value: function onPauseClick() {
+      var spotifyApi = this.props.spotifyApi;
+      spotifyApi.pause();
+    }
+  }, {
+    key: "onPrevClick",
+    value: function onPrevClick() {
+      var spotifyApi = this.props.spotifyApi;
+      spotifyApi.skipToPrev();
+    }
+  }, {
+    key: "onNextClick",
+    value: function onNextClick() {
+      var spotifyApi = this.props.spotifyApi;
+      spotifyApi.skipToNext();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      var _this$state = this.state,
+          token = _this$state.token,
+          playing = _this$state.playing,
+          trackName = _this$state.trackName,
+          artistName = _this$state.artistName;
+      return __jsx(Background, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        },
+        __self: this
+      }, __jsx(_RecordPlayer__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        },
+        __self: this
+      }), __jsx("iframe", {
+        src: "https://open.spotify.com/embed/playlist/45HcC9YjCzw8OdnDLyeHAM?si=JJmKWHb_TmqMG5zcKCjIRA&theme=white",
+        width: "300",
+        height: "80",
+        frameBorder: "0",
+        allowtransparency: "true",
+        allow: "encrypted-media",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
+      }), __jsx("svg", {
+        width: "1em",
+        height: "1em",
+        viewBox: "0 0 128 128",
+        preserveAspectRatio: "xMidYMid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, __jsx("path", {
+        d: "M119.351 64L8.65 0v128z",
+        fill: "black",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
+      })), __jsx("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      }, trackName), __jsx("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        },
+        __self: this
+      }, artistName), __jsx("button", {
+        onClick: function onClick() {
+          return _this3.onPrevClick();
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }, "Previous"), __jsx("button", {
+        onClick: function onClick() {
+          return _this3.onPlayClick();
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69
+        },
+        __self: this
+      }, playing ? "Pause" : "Play"), __jsx("button", {
+        onClick: function onClick() {
+          return _this3.onNextClick();
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70
+        },
+        __self: this
+      }, "Next"));
+    }
+  }]);
+
+  return Hero;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (Hero);
 
 /***/ }),
 
-/***/ "./components/Hero.jsx":
-/*!*****************************!*\
-  !*** ./components/Hero.jsx ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
-/* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "Hero",
-  componentId: "fb966e-0"
-})(["background-image:url(", ");background-size:cover;background-attachment:fixed;background-repeat:no-repeat;background-color:rgba(0,0,0,0.7);background-blend-mode:darken;"], function (props) {
-  return props.imageUrl;
-}));
-
-/***/ }),
-
-/***/ "./components/HeroSection.jsx":
-/*!************************************!*\
-  !*** ./components/HeroSection.jsx ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
-/* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "HeroSection",
-  componentId: "sc-1pvft2f-0"
-})(["padding:12rem 15rem;font-weight:bold;line-height:1.15;letter-spacing:0.5rem;"]));
-
-/***/ }),
-
-/***/ "./components/HeroText.jsx":
-/*!*********************************!*\
-  !*** ./components/HeroText.jsx ***!
-  \*********************************/
-/*! exports provided: HeroTitle, HeroSubtitle */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeroTitle", function() { return HeroTitle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeroSubtitle", function() { return HeroSubtitle; });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-
-
-var HeroTitle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "HeroText__HeroTitle",
-  componentId: "euqag-0"
-})(["color:white;font-size:72px;"]);
-var HeroSubtitle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "HeroText__HeroSubtitle",
-  componentId: "euqag-1"
-})(["color:", ";font-size:34px;"], _Styles__WEBPACK_IMPORTED_MODULE_1__["yellow"]);
-
-/***/ }),
-
-/***/ "./components/ImageGrid.jsx":
+/***/ "./components/ImageText.jsx":
 /*!**********************************!*\
-  !*** ./components/ImageGrid.jsx ***!
+  !*** ./components/ImageText.jsx ***!
   \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _BodySection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BodySection */ "./components/BodySection.jsx");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/ImageGrid.jsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
+
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/ImageText.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject5() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  flex: 2 1 auto;\n  padding-left: 2rem;\n\n  @media screen and (max-width: ", "px) {\n    margin: 2rem 0 0;\n    padding: 0;\n    text-align: center;\n  }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  flex-shrink: 0;\n  width: ", "\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  justify-content: flex-end;\n\n  @media screen and (max-width: ", "px) {\n    justify-content: center;\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  flex: 1 1 auto;\n  margin-bottom: auto;\n  padding-right: 2rem;\n  justify-content: flex-end;\n  min-width: 230px;\n\n  @media screen and (max-width: ", "px) {\n    padding: 0;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  padding-bottom: ", ";\n\n  @media screen and (max-width: ", "px) {\n    display: block;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
 
 
 
-var Container = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_BodySection__WEBPACK_IMPORTED_MODULE_2__["default"]).withConfig({
-  displayName: "ImageGrid__Container",
-  componentId: "sc-1uh8uch-0"
-})(["display:flex;flex-wrap:wrap;justify-content:center;"]);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
-  displayName: "ImageGrid__Image",
-  componentId: "sc-1uh8uch-1"
-})(["height:150px;margin:3rem;"]);
-/**
- * @param {{ imageUrls: string[] }} props
- */
+var PaddedFlex = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"])(_templateObject(), function (props) {
+  return props.bottomPadding ? '5rem' : '0';
+}, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet);
+var ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet);
+var ImageFlex = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"])(_templateObject3(), _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet);
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject4(), function (props) {
+  return props.size || '120px';
+});
+var TextContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5(), _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet);
 
-/* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return __jsx(Container, {
+var ImageText = function ImageText(_ref) {
+  var imageSize = _ref.imageSize,
+      imageSrc = _ref.imageSrc,
+      bottomPadding = _ref.bottomPadding,
+      children = _ref.children;
+  return __jsx(PaddedFlex, {
+    bottomPadding: bottomPadding,
+    justify: "space-around",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 49
     },
     __self: this
-  }, props.imageUrls.map(function (imageUrl) {
-    return __jsx(Image, {
-      src: imageUrl,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    });
-  }));
-});
-
-/***/ }),
-
-/***/ "./components/ImageSection.jsx":
-/*!*************************************!*\
-  !*** ./components/ImageSection.jsx ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/ImageSection.jsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-var FlexRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "ImageSection__FlexRow",
-  componentId: "sc-1tvgsie-0"
-})(["display:flex;flex-direction:row;height:18.75rem;@media (max-width:", "px){>:nth-child(3){display:none;}}@media (max-width:576px){>:nth-child(2){display:none;}}"], _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallScreen);
-var ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "ImageSection__ImageContainer",
-  componentId: "sc-1tvgsie-1"
-})(["display:flex;flex:1;justify-content:center;align-items:center;overflow:hidden;"]);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
-  displayName: "ImageSection__Image",
-  componentId: "sc-1tvgsie-2"
-})(["flex-shrink:0;min-width:100%;min-height:100%;"]);
-/**
- * @param {{ imageUrls: string[] }} props
- */
-
-/* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return __jsx(FlexRow, {
+  }, __jsx(ImageContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 50
     },
     __self: this
-  }, props.imageUrls.map(function (imageUrl, index) {
-    return __jsx(ImageContainer, {
-      key: index,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45
-      },
-      __self: this
-    }, __jsx(Image, {
-      src: imageUrl,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46
-      },
-      __self: this
-    }));
-  }));
-});
+  }, __jsx(ImageFlex, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, __jsx(Image, {
+    src: imageSrc,
+    size: imageSize,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }))), __jsx(TextContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, children));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ImageText);
 
 /***/ }),
 
@@ -904,47 +510,219 @@ var Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withCo
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components_NextLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/NextLink */ "./components/NextLink.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_NextLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/NextLink */ "./components/NextLink.js");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
+
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/Link.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  text-decoration: underline;\n\n  transition: all 0.2s;\n  :hover {\n    color: ", ";\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+var Decoration = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span(_templateObject(), _Styles__WEBPACK_IMPORTED_MODULE_4__["yellow"]);
+
+var Link = function Link(_ref) {
+  var href = _ref.href,
+      external = _ref.external,
+      children = _ref.children;
+  return __jsx(_components_NextLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: href,
+    external: external,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx(Decoration, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, children));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Link);
+
+/***/ }),
+
+/***/ "./components/MusicNotes.js":
+/*!**********************************!*\
+  !*** ./components/MusicNotes.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/Link.jsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/MusicNotes.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  margin-left: -1.5rem;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  margin-bottom: 4rem;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: inline-block;\n  opacity: 0;\n  animation: ", " 3s linear;\n  animation-delay: ", "s;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  0% {\n    opacity: 0;\n    transform: translate3d(-30%, 100%, 0);\n  }\n\n  50% {\n    opacity: 1;\n  }\n\n  100% {\n    opacity: 0;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
 
 
 
 
-var Link = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
-  displayName: "Link",
-  componentId: "sc-13sjmlv-0"
-})(["text-decoration:underline;font-weight:bold;cursor:pointer;transition:all 0.2s;:hover{color:", ";}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"]);
-/**
- * A text link
- * @param {{
- *   children: React.ReactNode
- *   href: string
- *   external?: boolean
- * }} props
- */
-
-/* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return __jsx(_components_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: props.href,
-    external: props.external,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, __jsx(Link, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, props.children));
+var fadeInUp = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
+var FadeInUp = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), fadeInUp, function (props) {
+  return props.delay || 0;
 });
+var MiddleNote = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+var EndNote = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4());
+
+var MusicNotes = function MusicNotes(_ref) {
+  var animationEnd = _ref.animationEnd;
+  return __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, __jsx(FadeInUp, {
+    delay: 0.3,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, __jsx("svg", {
+    height: "50px",
+    fill: _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"],
+    viewBox: "0 0 401.963 401.963",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M253.481,0v273.579c-14.274-10.374-32.573-16.616-52.5-16.616c-45.491,0-82.5,32.523-82.5,72.5s37.009,72.5,82.5,72.5 c45.49,0,82.5-32.523,82.5-72.5V0H253.481z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }))), __jsx(MiddleNote, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, __jsx(FadeInUp, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, __jsx("svg", {
+    height: "50px",
+    fill: _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"],
+    viewBox: "0 0 300 300",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, __jsx("path", {
+    id: "XMLID_8_",
+    d: "M228.914,25.515C202.935,9.061,168.694,0,132.5,0c-8.284,0-15,6.716-15,15v182.399 c-8.832-4.696-19.075-7.399-30-7.399c-33.084,0-60,24.673-60,55s26.916,55,60,55s60-24.673,60-55V30.629 c52.836,4.418,95,31.717,95,63.537c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15C272.5,67.696,257.021,43.316,228.914,25.515z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  })))), __jsx(EndNote, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, __jsx(FadeInUp, {
+    delay: 0.6,
+    onAnimationEnd: animationEnd,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, __jsx("svg", {
+    height: "70px",
+    fill: _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"],
+    viewBox: "0 0 489.164 489.164",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M159.582,75.46v285.32c-14.274-10.374-32.573-16.616-52.5-16.616c-45.491,0-82.5,32.523-82.5,72.5s37.009,72.5,82.5,72.5 s82.5-32.523,82.5-72.5V168.942l245-60.615v184.415c-14.274-10.374-32.573-16.616-52.5-16.616c-45.491,0-82.5,32.523-82.5,72.5 s37.009,72.5,82.5,72.5s82.5-32.523,82.5-72.5V0L159.582,75.46z M189.582,138.038V98.942l245-60.615v39.095L189.582,138.038z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  })))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (MusicNotes);
 
 /***/ }),
 
@@ -957,125 +735,160 @@ var Link = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withCo
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _NextLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NextLink */ "./components/NextLink.js");
-/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/NavBar.jsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _NextLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NextLink */ "./components/NextLink.js");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
+
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/NavBar.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  color: black;\n  font-size: 30px;\n\n  a > i {\n    padding: 0.4rem;\n    transition: all 0.2s;\n    :hover {\n      color: ", ";\n    }\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  padding: 2rem;\n\n  @media screen and (max-width: ", "px) {\n    display: block;\n    text-align: center;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
 
 
 
 
-var MenuText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "NavBar__MenuText",
-  componentId: "gz3npb-0"
-})(["margin-left:2rem;margin-right:2rem;font-size:20px;cursor:pointer;user-select:none;"]);
-var MenuOption = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(MenuText).withConfig({
-  displayName: "NavBar__MenuOption",
-  componentId: "gz3npb-1"
-})(["color:white;transition:all 0.2s;:hover{color:", ";}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"]);
-var MenuButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(MenuText).withConfig({
-  displayName: "NavBar__MenuButton",
-  componentId: "gz3npb-2"
-})(["border:2px solid ", ";color:", ";padding-top:0.6rem;padding-bottom:0.6rem;padding-left:1.25rem;padding-right:1.25rem;margin-right:1rem;transition:all 0.2s;:hover{background-color:", ";color:black;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"]);
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"], {
+
+var NavContainer = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_4__["FlexContainer"])(_templateObject(), _Styles__WEBPACK_IMPORTED_MODULE_4__["responsiveSizes"].smallTablet);
+var Logos = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), _Styles__WEBPACK_IMPORTED_MODULE_4__["yellow"]);
+
+var NavBar = function NavBar() {
+  return __jsx(NavContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "Alexandra Girard"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Software Developer")), __jsx(_Styles__WEBPACK_IMPORTED_MODULE_4__["Spacer"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }), __jsx(Logos, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "mailto:alexgirard999@gmail.com",
+    external: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-envelope-o",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://open.spotify.com/user/alexgirard9?si=T_2z-4tdR5ilMaWwm60-ZQ",
+    external: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-spotify",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://www.linkedin.com/alexandra-girard",
+    external: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-linkedin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://github.com/alexgirard",
+    external: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: this
-  }, __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: "/",
+  }, __jsx("i", {
+    className: "fa fa-github",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    href: "https://docs.google.com/document/d/1LQO5B_lDf3xaVSWZYI2jUqBVWe0w86uSbFnJLtHFEPg/edit?usp=sharing",
+    external: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
-  }, __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["Logo"], {
-    width: "200px",
-    src: "/static/logo_w.png",
+  }, __jsx("i", {
+    className: "fa fa-file-text-o",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 40
     },
     __self: this
-  })), __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["Spacer"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }), __jsx(MenuOption, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "#about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }, "ABOUT")), __jsx(MenuOption, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "#events",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
-  }, "EVENTS")), __jsx(MenuOption, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "#sponsor",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  }, "SPONSOR")), __jsx(MenuOption, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "#contact",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }, "CONTACT")), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: "https://forms.gle/WGnEERX5HZF1xDwb7",
-    external: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, __jsx(MenuButton, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, "JOIN")));
-});
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavBar);
 
 /***/ }),
 
@@ -1092,7 +905,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/NextLink.js";
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/NextLink.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1134,73 +947,597 @@ var NextLink = function NextLink(_ref) {
 
 /***/ }),
 
+/***/ "./components/RecordPlayer.js":
+/*!************************************!*\
+  !*** ./components/RecordPlayer.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _RotatingRecord__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./RotatingRecord */ "./components/RotatingRecord.js");
+/* harmony import */ var _MusicNotes__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./MusicNotes */ "./components/MusicNotes.js");
+
+
+
+
+
+
+
+
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/RecordPlayer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_7__["default"])(["\n  position: absolute;\n  top: -2rem;\n  right: 0;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_7__["default"])(["\n  position: relative;\n  width: 350px;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_7__["default"])(["\n  position: absolute;\n  top: 0;\n  right: 0;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_7__["default"])(["\n  width: 300px;\n  position: relative;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+var RecordPlayerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject());
+var Tonearm = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject2());
+var NotesWrapper = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject3());
+var Notes = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject4());
+
+var RecordPlayer =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(RecordPlayer, _React$Component);
+
+  function RecordPlayer() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, RecordPlayer);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(RecordPlayer)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+      showNotes: true
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(RecordPlayer, [{
+    key: "showMusicNotes",
+    value: function showMusicNotes() {
+      this.setState({
+        showNotes: true
+      });
+    }
+  }, {
+    key: "hideMusicNotes",
+    value: function hideMusicNotes() {
+      this.setState({
+        showNotes: false
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var showNotes = this.state.showNotes;
+      return __jsx(NotesWrapper, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }, __jsx(RecordPlayerWrapper, {
+        onMouseEnter: function onMouseEnter() {
+          return _this2.showMusicNotes();
+        },
+        onClick: function onClick() {
+          return _this2.showMusicNotes();
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, __jsx(_RotatingRecord__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }), __jsx(Tonearm, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }, __jsx("svg", {
+        viewBox: "0 0 8.4666665 10.583333625",
+        height: "300px",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, __jsx("g", {
+        transform: "translate(-3.5,-289)",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, __jsx("path", {
+        style: {
+          color: 'black',
+          fontSize: 'medium',
+          textDecorationColor: 'black',
+          clipRule: 'nonzero',
+          display: 'inline',
+          overflow: 'visible',
+          opacity: 1,
+          fill: 'black',
+          fillRule: 'evenodd',
+          stroke: 'none',
+          strokeWidth: 0.26458335
+        },
+        d: "m 7.5390625,294.88477 a 0.13230489,0.13230489 0 0 0 -0.1308594,0.13476 l 0,0.45899 a 0.1328125,0.1328125 0 0 0 0.265625,0 l 0,-0.45899 a 0.13230489,0.13230489 0 0 0 -0.1347656,-0.13476 z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      }), __jsx("path", {
+        style: {
+          color: 'black',
+          fontSize: 'medium',
+          textDecorationColor: 'black',
+          clipRule: 'nonzero',
+          display: 'inline',
+          overflow: 'visible',
+          opacity: 1,
+          fill: 'black',
+          fillRule: 'nonzero',
+          stroke: 'none',
+          strokeWidth: 0.26458335
+        },
+        d: "m 7.2636719,294.22266 a 0.13230489,0.13230489 0 0 0 -0.1191407,0.13086 l 0,0.6621 a 0.13230489,0.13230489 0 0 0 0.1308594,0.13282 l 0.5292969,0 A 0.13230489,0.13230489 0 0 0 7.9375,295.01562 l 0,-0.6621 a 0.13230489,0.13230489 0 0 0 -0.1328125,-0.13086 l -0.5292969,0 a 0.13230489,0.13230489 0 0 0 -0.011719,0 z m 0.1445312,0.26367 0.265625,0 0,0.39648 -0.265625,0 0,-0.39648 z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        },
+        __self: this
+      }), __jsx("path", {
+        style: {
+          color: 'black',
+          fontSize: 'medium',
+          textDecorationColor: 'black',
+          clipRule: 'nonzero',
+          display: 'inline',
+          overflow: 'visible',
+          opacity: 1,
+          fill: 'black',
+          fillRule: 'evenodd',
+          stroke: 'none',
+          strokeWidth: 0.26458335
+        },
+        d: "m 6.8652344,290.25195 a 0.1323049,0.1323049 0 0 0 -0.078125,0.22657 l 0.6210937,0.62304 0,3.15235 a 0.1328125,0.1328125 0 0 0 0.265625,0 l 0,-3.20703 a 0.1323049,0.1323049 0 0 0 -0.039063,-0.0938 l -0.6601562,-0.66015 a 0.1323049,0.1323049 0 0 0 -0.109375,-0.041 z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }))))), showNotes && __jsx(Notes, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      }, __jsx(_MusicNotes__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        animationEnd: function animationEnd() {
+          return _this2.hideMusicNotes();
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      })));
+    }
+  }]);
+
+  return RecordPlayer;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (RecordPlayer);
+
+/***/ }),
+
+/***/ "./components/RotatingRecord.js":
+/*!**************************************!*\
+  !*** ./components/RotatingRecord.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/RotatingRecord.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: inline-block;\n  animation: ", " 6s linear infinite;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+var rotate = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
+var RecordWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), rotate);
+
+var RotatingRecord = function RotatingRecord() {
+  return __jsx(RecordWrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, __jsx("svg", {
+    viewBox: "0 0 8.4666665 10.583333625",
+    height: "300px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, __jsx("g", {
+    transform: "translate(0.5,-287.5)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, __jsx("path", {
+    style: {
+      color: 'black',
+      fontSize: 'medium',
+      textDecorationColor: 'black',
+      clipRule: 'nonzero',
+      display: 'inline',
+      overflow: 'visible',
+      opacity: 1,
+      fill: 'black',
+      fillRule: 'nonzero',
+      stroke: 'none',
+      strokeWidth: 0.26458335
+    },
+    d: "m 3.7050781,289.5918 c -1.7519377,0 -3.17578203,1.42384 -3.17578122,3.17578 -8.1e-7,1.75194 1.42384352,3.17383 3.17578122,3.17383 1.7519378,0 3.173829,-1.42189 3.1738281,-3.17383 9e-7,-1.75194 -1.4218903,-3.17578 -3.1738281,-3.17578 z m 0,0.26367 c 1.6089463,0 2.910157,1.30316 2.9101563,2.91211 7e-7,1.60894 -1.30121,2.91015 -2.9101563,2.91015 -1.6089462,0 -2.91211009,-1.30121 -2.91210935,-2.91015 -7.4e-7,-1.60895 1.30316315,-2.91211 2.91210935,-2.91211 z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }), __jsx("path", {
+    style: {
+      color: 'black',
+      fontSize: 'medium',
+      textDecorationColor: 'black',
+      clipRule: 'nonzero',
+      display: 'inline',
+      overflow: 'visible',
+      opacity: 1,
+      fill: 'black',
+      fillRule: 'nonzero',
+      stroke: 'none',
+      strokeWidth: 0.26458335
+    },
+    d: "m 3.7050781,291.57617 c -0.6559958,0 -1.1914044,0.53541 -1.1914062,1.19141 -4.4e-6,0.656 0.5354061,1.18945 1.1914062,1.18945 0.655999,0 1.1894576,-0.53345 1.1894531,-1.18945 -1.7e-6,-0.656 -0.5334585,-1.19141 -1.1894531,-1.19141 z m 0,0.26367 c 0.5130036,0 0.9257799,0.41473 0.9257813,0.92774 3.4e-6,0.51301 -0.4127742,0.92578 -0.9257813,0.92578 -0.513008,0 -0.9277378,-0.41277 -0.9277343,-0.92578 1.4e-6,-0.51301 0.4147298,-0.92774 0.9277343,-0.92774 z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }), __jsx("path", {
+    style: {
+      color: 'black',
+      fontSize: 'medium',
+      textDecorationColor: 'black',
+      clipRule: 'nonzero',
+      display: 'inline',
+      overflow: 'visible',
+      opacity: 1,
+      fill: 'black',
+      fillRule: 'nonzero',
+      stroke: 'none',
+      strokeWidth: 0.26458335
+    },
+    d: "m 3.7050781,292.17188 c -0.3272149,-10e-6 -0.5957029,0.26848 -0.5957031,0.5957 2e-7,0.32721 0.2684882,0.59375 0.5957031,0.59375 0.3272136,0 0.5937498,-0.26654 0.59375,-0.59375 -2e-7,-0.32722 -0.2665364,-0.5957 -0.59375,-0.5957 z m 0,0.26367 c 0.1842226,0 0.330078,0.14781 0.3300781,0.33203 -1e-7,0.18422 -0.1458555,0.33008 -0.3300781,0.33008 -0.1842234,0 -0.3320311,-0.14586 -0.3320312,-0.33008 1e-7,-0.18423 0.1478078,-0.33203 0.3320312,-0.33203 z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }), __jsx("path", {
+    style: {
+      color: 'black',
+      fontSize: 'medium',
+      textDecorationColor: 'black',
+      clipRule: 'nonzero',
+      display: 'inline',
+      overflow: 'visible',
+      opacity: 1,
+      fill: 'black',
+      fillRule: 'nonzero',
+      stroke: 'none',
+      strokeWidth: 0.26458335
+    },
+    d: "m 3.1621094,290.58398 a 0.13230489,0.13230489 0 0 0 -0.021484,0.004 c -0.9913556,0.2569 -1.6855495,1.15404 -1.6855469,2.17773 a 0.1328125,0.1328125 0 0 0 0.265625,0 c -2.3e-6,-0.9044 0.6103417,-1.69487 1.4863281,-1.92187 a 0.13230489,0.13230489 0 0 0 -0.044922,-0.25977 z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (RotatingRecord);
+
+/***/ }),
+
+/***/ "./components/Section.jsx":
+/*!********************************!*\
+  !*** ./components/Section.jsx ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
+
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/components/Section.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100%;\n  max-width: 800px;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: inline-block;\n  border-top: 2px solid black;\n  margin-bottom: 4rem;\n\n  @media screen and (max-width: ", "px) {\n    border-top: none;\n    border-bottom: 2px solid black;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+var Subtitle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet);
+var BodyContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+
+var Section = function Section(_ref) {
+  var subtitle = _ref.subtitle,
+      hideLine = _ref.hideLine,
+      children = _ref.children;
+  return __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["LineWrapper"], {
+    hideLine: hideLine,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, __jsx(Subtitle, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, subtitle)), __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"], {
+    justify: "center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx(BodyContent, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, children)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
 /***/ "./components/Styles.jsx":
 /*!*******************************!*\
   !*** ./components/Styles.jsx ***!
   \*******************************/
-/*! exports provided: yellow, Spacer, Logo, FlexContainer, responsiveSizes */
+/*! exports provided: yellow, responsiveSizes, Spacer, FlexContainer, LineWrapper, TextBreak */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "yellow", function() { return yellow; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Spacer", function() { return Spacer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Logo", function() { return Logo; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlexContainer", function() { return FlexContainer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "responsiveSizes", function() { return responsiveSizes; });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Spacer", function() { return Spacer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlexContainer", function() { return FlexContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineWrapper", function() { return LineWrapper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextBreak", function() { return TextBreak; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  padding: ", "rem;\n\n  @media screen and (max-width: ", "px) {\n    padding: ", "rem;\n  }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  border-top: ", ";\n  padding: ", "rem 0 8rem;\n  width: 100%;\n\n  @media screen and (max-width: ", "px) {\n    padding: 4rem 0;\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: ", ";\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  flex: 1;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
 
 var yellow = '#ffd600';
-var Spacer = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "Styles__Spacer",
-  componentId: "sc-1u11rvr-0"
-})(["flex:1;"]);
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].img.withConfig({
-  displayName: "Styles__Logo",
-  componentId: "sc-1u11rvr-1"
-})(["width:", ";padding:1rem;"], function (props) {
-  return props.height;
-});
-var FlexContainer = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "Styles__FlexContainer",
-  componentId: "sc-1u11rvr-2"
-})(["display:flex;flex-direction:row;align-items:center;"]);
 var responsiveSizes = {
   largeScreen: 1440,
   smallScreen: 1024,
   tablet: 768,
+  smallTablet: 600,
   largeMobile: 425,
   smallMobile: 375
 };
+var Spacer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var FlexContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), function (props) {
+  return props.justify || 'flex-start';
+});
+var LineWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), function (props) {
+  return !props.hideLine && '1px solid rgb(196, 196, 196)';
+}, function (props) {
+  return props.hideLine ? 4 : 8;
+}, responsiveSizes.tablet);
+var TextBreak = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), function (props) {
+  return props.size * 0.8 || 0.8;
+}, responsiveSizes.tablet, function (props) {
+  return props.size ? 0.4 : 0.2;
+});
 
 /***/ }),
 
-/***/ "./events.js":
-/*!*******************!*\
-  !*** ./events.js ***!
-  \*******************/
-/*! exports provided: events */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "events", function() { return events; });
-var events = [{
-  month: 9,
-  day: 19,
-  weekday: 'Thursday',
-  message: 'Fall 2019 first meeting - all welcome!'
-}, {
-  month: 10,
-  day: 12,
-  weekday: 'Tuesday',
-  message: "Krispe Cream fundraiser - come out to slc and buy a box of donuts to help support our team!"
-}, {
-  month: 11,
-  day: 25,
-  weekday: 'Saturday',
-  message: 'First competiton - held at the University of Toronto in Carl Polluk Hall, our team bus will be leaving at 9am in front of E7'
-}];
+module.exports = __webpack_require__(/*! core-js/library/fn/array/from */ "./node_modules/core-js/library/fn/array/from.js");
 
 /***/ }),
 
@@ -1223,6 +1560,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ ".
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "./node_modules/core-js/library/fn/get-iterator.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/is-iterable */ "./node_modules/core-js/library/fn/is-iterable.js");
 
 /***/ }),
 
@@ -1259,6 +1607,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "./
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "./node_modules/core-js/library/fn/object/define-properties.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -1267,6 +1626,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "./
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "./node_modules/core-js/library/fn/object/define-property.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "./node_modules/core-js/library/fn/object/freeze.js");
 
 /***/ }),
 
@@ -1336,6 +1706,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/reflect/construct */
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/set.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/set.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/set */ "./node_modules/core-js/library/fn/set.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js":
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol.js ***!
@@ -1372,6 +1753,29 @@ function _arrayWithHoles(arr) {
 }
 
 module.exports = _arrayWithHoles;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/arrayWithoutHoles.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/arrayWithoutHoles.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Array$isArray = __webpack_require__(/*! ../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+
+function _arrayWithoutHoles(arr) {
+  if (_Array$isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+module.exports = _arrayWithoutHoles;
 
 /***/ }),
 
@@ -1535,6 +1939,277 @@ module.exports = _createClass;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _assertThisInitialized; });
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _classCallCheck; });
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _createClass; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _getPrototypeOf; });
+/* harmony import */ var _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js");
+/* harmony import */ var _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/set-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js");
+/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1___default.a ? _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default.a : function _getPrototypeOf(o) {
+    return o.__proto__ || _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default()(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inherits; });
+/* harmony import */ var _core_js_object_create__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/create */ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js");
+/* harmony import */ var _core_js_object_create__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_create__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./setPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js");
+
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = _core_js_object_create__WEBPACK_IMPORTED_MODULE_0___default()(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _possibleConstructorReturn; });
+/* harmony import */ var _helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/esm/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js");
+/* harmony import */ var _assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (Object(_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return Object(_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__["default"])(self);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
+/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/set-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js");
+/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0__);
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0___default.a || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteral; });
+/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
+/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
+/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+
+  return _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default()(strings, {
+    raw: {
+      value: _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(raw)
+    }
+  }));
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _typeof; });
+/* harmony import */ var _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
+/* harmony import */ var _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_symbol__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+/* harmony import */ var _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_symbol__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+function _typeof2(obj) { if (typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && typeof _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default.a === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && obj.constructor === _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a && obj !== _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && _typeof2(_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default.a) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && obj.constructor === _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a && obj !== _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/extends.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/extends.js ***!
@@ -1675,6 +2350,25 @@ module.exports = _interopRequireWildcard;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/iterableToArray.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/iterableToArray.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Array$from = __webpack_require__(/*! ../core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+
+var _isIterable = __webpack_require__(/*! ../core-js/is-iterable */ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js");
+
+function _iterableToArray(iter) {
+  if (_isIterable(Object(iter)) || Object.prototype.toString.call(iter) === "[object Arguments]") return _Array$from(iter);
+}
+
+module.exports = _iterableToArray;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/iterableToArrayLimit.js":
 /*!*****************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/iterableToArrayLimit.js ***!
@@ -1726,6 +2420,21 @@ function _nonIterableRest() {
 }
 
 module.exports = _nonIterableRest;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/nonIterableSpread.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/nonIterableSpread.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+module.exports = _nonIterableSpread;
 
 /***/ }),
 
@@ -1792,6 +2501,27 @@ function _slicedToArray(arr, i) {
 }
 
 module.exports = _slicedToArray;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/toConsumableArray.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/toConsumableArray.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime-corejs2/helpers/arrayWithoutHoles.js");
+
+var iterableToArray = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime-corejs2/helpers/iterableToArray.js");
+
+var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime-corejs2/helpers/nonIterableSpread.js");
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
 
 /***/ }),
 
@@ -1952,6 +2682,20 @@ var unitlessKeys = {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/array/from.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/core-js/library/fn/array/from.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../../modules/es6.array.from */ "./node_modules/core-js/library/modules/es6.array.from.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Array.from;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/array/is-array.js":
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/fn/array/is-array.js ***!
@@ -1975,6 +2719,20 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 __webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
 __webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
 module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "./node_modules/core-js/library/modules/core.get-iterator.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/is-iterable.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/is-iterable.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+module.exports = __webpack_require__(/*! ../modules/core.is-iterable */ "./node_modules/core-js/library/modules/core.is-iterable.js");
 
 
 /***/ }),
@@ -2027,6 +2785,22 @@ module.exports = function create(P, D) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/object/define-properties.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/define-properties.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.define-properties */ "./node_modules/core-js/library/modules/es6.object.define-properties.js");
+var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
+module.exports = function defineProperties(T, D) {
+  return $Object.defineProperties(T, D);
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/define-property.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/define-property.js ***!
@@ -2039,6 +2813,19 @@ var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/cor
 module.exports = function defineProperty(it, key, desc) {
   return $Object.defineProperty(it, key, desc);
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/freeze.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/freeze.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.freeze */ "./node_modules/core-js/library/modules/es6.object.freeze.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.freeze;
 
 
 /***/ }),
@@ -2125,6 +2912,25 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
 
 __webpack_require__(/*! ../../modules/es6.reflect.construct */ "./node_modules/core-js/library/modules/es6.reflect.construct.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Reflect.construct;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/set.js":
+/*!************************************************!*\
+  !*** ./node_modules/core-js/library/fn/set.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
+__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.set */ "./node_modules/core-js/library/modules/es6.set.js");
+__webpack_require__(/*! ../modules/es7.set.to-json */ "./node_modules/core-js/library/modules/es7.set.to-json.js");
+__webpack_require__(/*! ../modules/es7.set.of */ "./node_modules/core-js/library/modules/es7.set.of.js");
+__webpack_require__(/*! ../modules/es7.set.from */ "./node_modules/core-js/library/modules/es7.set.from.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Set;
 
 
 /***/ }),
@@ -2712,6 +3518,26 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 
 var core = module.exports = { version: '2.6.9' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_create-property.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_create-property.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $defineProperty = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js");
+var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
+
+module.exports = function (object, index, value) {
+  if (index in object) $defineProperty.f(object, index, createDesc(0, value));
+  else object[index] = value;
+};
 
 
 /***/ }),
@@ -4514,6 +5340,76 @@ module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/libr
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/core.is-iterable.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/core.is-iterable.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var classof = __webpack_require__(/*! ./_classof */ "./node_modules/core-js/library/modules/_classof.js");
+var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator');
+var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
+module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js").isIterable = function (it) {
+  var O = Object(it);
+  return O[ITERATOR] !== undefined
+    || '@@iterator' in O
+    // eslint-disable-next-line no-prototype-builtins
+    || Iterators.hasOwnProperty(classof(O));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.array.from.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.array.from.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
+var call = __webpack_require__(/*! ./_iter-call */ "./node_modules/core-js/library/modules/_iter-call.js");
+var isArrayIter = __webpack_require__(/*! ./_is-array-iter */ "./node_modules/core-js/library/modules/_is-array-iter.js");
+var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/library/modules/_to-length.js");
+var createProperty = __webpack_require__(/*! ./_create-property */ "./node_modules/core-js/library/modules/_create-property.js");
+var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ "./node_modules/core-js/library/modules/core.get-iterator-method.js");
+
+$export($export.S + $export.F * !__webpack_require__(/*! ./_iter-detect */ "./node_modules/core-js/library/modules/_iter-detect.js")(function (iter) { Array.from(iter); }), 'Array', {
+  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
+  from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
+    var O = toObject(arrayLike);
+    var C = typeof this == 'function' ? this : Array;
+    var aLen = arguments.length;
+    var mapfn = aLen > 1 ? arguments[1] : undefined;
+    var mapping = mapfn !== undefined;
+    var index = 0;
+    var iterFn = getIterFn(O);
+    var length, result, step, iterator;
+    if (mapping) mapfn = ctx(mapfn, aLen > 2 ? arguments[2] : undefined, 2);
+    // if object isn't iterable or it's array with default iterator - use simple case
+    if (iterFn != undefined && !(C == Array && isArrayIter(iterFn))) {
+      for (iterator = iterFn.call(O), result = new C(); !(step = iterator.next()).done; index++) {
+        createProperty(result, index, mapping ? call(iterator, mapfn, [step.value, index], true) : step.value);
+      }
+    } else {
+      length = toLength(O.length);
+      for (result = new C(length); length > index; index++) {
+        createProperty(result, index, mapping ? mapfn(O[index], index) : O[index]);
+      }
+    }
+    result.length = index;
+    return result;
+  }
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.array.is-array.js":
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.array.is-array.js ***!
@@ -4635,6 +5531,20 @@ $export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create 
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.object.define-properties.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.define-properties.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+$export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperties: __webpack_require__(/*! ./_object-dps */ "./node_modules/core-js/library/modules/_object-dps.js") });
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.object.define-property.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.define-property.js ***!
@@ -4645,6 +5555,26 @@ $export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
 $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.freeze.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.freeze.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.5 Object.freeze(O)
+var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
+var meta = __webpack_require__(/*! ./_meta */ "./node_modules/core-js/library/modules/_meta.js").onFreeze;
+
+__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('freeze', function ($freeze) {
+  return function freeze(it) {
+    return $freeze && isObject(it) ? $freeze(meta(it)) : it;
+  };
+});
 
 
 /***/ }),
@@ -5090,6 +6020,32 @@ $export($export.S + $export.F * (NEW_TARGET_BUG || ARGS_BUG), 'Reflect', {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.set.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.set.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var strong = __webpack_require__(/*! ./_collection-strong */ "./node_modules/core-js/library/modules/_collection-strong.js");
+var validate = __webpack_require__(/*! ./_validate-collection */ "./node_modules/core-js/library/modules/_validate-collection.js");
+var SET = 'Set';
+
+// 23.2 Set Objects
+module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-js/library/modules/_collection.js")(SET, function (get) {
+  return function Set() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
+}, {
+  // 23.2.3.1 Set.prototype.add(value)
+  add: function add(value) {
+    return strong.def(validate(this, SET), value = value === 0 ? 0 : value, value);
+  }
+}, strong);
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.string.iterator.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.string.iterator.js ***!
@@ -5470,6 +6426,47 @@ $export($export.S, 'Promise', { 'try': function (callbackfn) {
   (result.e ? promiseCapability.reject : promiseCapability.resolve)(result.v);
   return promiseCapability.promise;
 } });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.set.from.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.set.from.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-set.from
+__webpack_require__(/*! ./_set-collection-from */ "./node_modules/core-js/library/modules/_set-collection-from.js")('Set');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.set.of.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.set.of.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-set.of
+__webpack_require__(/*! ./_set-collection-of */ "./node_modules/core-js/library/modules/_set-collection-of.js")('Set');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.set.to-json.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.set.to-json.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/DavidBruant/Map-Set.prototype.toJSON
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+
+$export($export.P + $export.R, 'Set', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "./node_modules/core-js/library/modules/_collection-to-json.js")('Set') });
 
 
 /***/ }),
@@ -6144,6 +7141,284 @@ function concatArrays(originVal, newVal) {
 /* harmony default export */ __webpack_exports__["default"] = (merge);
 
 
+
+/***/ }),
+
+/***/ "./node_modules/next-server/dist/lib/amp-context.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/amp-context.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.AmpStateContext = React.createContext({});
+
+/***/ }),
+
+/***/ "./node_modules/next-server/dist/lib/amp.js":
+/*!**************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/amp.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next-server/dist/lib/amp-context.js");
+
+function isInAmpMode() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$ampFirst = _ref.ampFirst,
+      ampFirst = _ref$ampFirst === void 0 ? false : _ref$ampFirst,
+      _ref$hybrid = _ref.hybrid,
+      hybrid = _ref$hybrid === void 0 ? false : _ref$hybrid,
+      _ref$hasQuery = _ref.hasQuery,
+      hasQuery = _ref$hasQuery === void 0 ? false : _ref$hasQuery;
+
+  return ampFirst || hybrid && hasQuery;
+}
+
+exports.isInAmpMode = isInAmpMode;
+
+function useAmp() {
+  // Don't assign the context value to a variable to save bytes
+  return isInAmpMode(react_1["default"].useContext(amp_context_1.AmpStateContext));
+}
+
+exports.useAmp = useAmp;
+
+/***/ }),
+
+/***/ "./node_modules/next-server/dist/lib/head-manager-context.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/head-manager-context.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.HeadManagerContext = React.createContext(null);
+
+/***/ }),
+
+/***/ "./node_modules/next-server/dist/lib/head.js":
+/*!***************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/head.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Set = __webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var side_effect_1 = __importDefault(__webpack_require__(/*! ./side-effect */ "./node_modules/next-server/dist/lib/side-effect.js"));
+
+var amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next-server/dist/lib/amp-context.js");
+
+var head_manager_context_1 = __webpack_require__(/*! ./head-manager-context */ "./node_modules/next-server/dist/lib/head-manager-context.js");
+
+var amp_1 = __webpack_require__(/*! ./amp */ "./node_modules/next-server/dist/lib/amp.js");
+
+function defaultHead() {
+  var inAmpMode = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+  var head = [react_1["default"].createElement("meta", {
+    key: "charSet",
+    charSet: "utf-8"
+  })];
+
+  if (!inAmpMode) {
+    head.push(react_1["default"].createElement("meta", {
+      key: "viewport",
+      name: "viewport",
+      content: "width=device-width,minimum-scale=1,initial-scale=1"
+    }));
+  }
+
+  return head;
+}
+
+exports.defaultHead = defaultHead;
+
+function onlyReactElement(list, child) {
+  // React children can be "string" or "number" in this case we ignore them for backwards compat
+  if (typeof child === 'string' || typeof child === 'number') {
+    return list;
+  } // Adds support for React.Fragment
+
+
+  if (child.type === react_1["default"].Fragment) {
+    return list.concat(react_1["default"].Children.toArray(child.props.children).reduce(function (fragmentList, fragmentChild) {
+      if (typeof fragmentChild === 'string' || typeof fragmentChild === 'number') {
+        return fragmentList;
+      }
+
+      return fragmentList.concat(fragmentChild);
+    }, []));
+  }
+
+  return list.concat(child);
+}
+
+var METATYPES = ['name', 'httpEquiv', 'charSet', 'itemProp'];
+/*
+ returns a function for filtering head child elements
+ which shouldn't be duplicated, like <title/>
+ Also adds support for deduplicated `key` properties
+*/
+
+function unique() {
+  var keys = new _Set();
+  var tags = new _Set();
+  var metaTypes = new _Set();
+  var metaCategories = {};
+  return function (h) {
+    if (h.key && typeof h.key !== 'number' && h.key.indexOf('.$') === 0) {
+      if (keys.has(h.key)) return false;
+      keys.add(h.key);
+      return true;
+    }
+
+    switch (h.type) {
+      case 'title':
+      case 'base':
+        if (tags.has(h.type)) return false;
+        tags.add(h.type);
+        break;
+
+      case 'meta':
+        for (var i = 0, len = METATYPES.length; i < len; i++) {
+          var metatype = METATYPES[i];
+          if (!h.props.hasOwnProperty(metatype)) continue;
+
+          if (metatype === 'charSet') {
+            if (metaTypes.has(metatype)) return false;
+            metaTypes.add(metatype);
+          } else {
+            var category = h.props[metatype];
+            var categories = metaCategories[metatype] || new _Set();
+            if (categories.has(category)) return false;
+            categories.add(category);
+            metaCategories[metatype] = categories;
+          }
+        }
+
+        break;
+    }
+
+    return true;
+  };
+}
+/**
+ *
+ * @param headElement List of multiple <Head> instances
+ */
+
+
+function reduceComponents(headElements, props) {
+  return headElements.reduce(function (list, headElement) {
+    var headElementChildren = react_1["default"].Children.toArray(headElement.props.children);
+    return list.concat(headElementChildren);
+  }, []).reduce(onlyReactElement, []).reverse().concat(defaultHead(props.inAmpMode)).filter(unique()).reverse().map(function (c, i) {
+    var key = c.key || i;
+    return react_1["default"].cloneElement(c, {
+      key: key
+    });
+  });
+}
+
+var Effect = side_effect_1["default"]();
+/**
+ * This component injects elements to `<head>` of your page.
+ * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
+ */
+
+function Head(_ref) {
+  var children = _ref.children;
+  return react_1["default"].createElement(amp_context_1.AmpStateContext.Consumer, null, function (ampState) {
+    return react_1["default"].createElement(head_manager_context_1.HeadManagerContext.Consumer, null, function (updateHead) {
+      return react_1["default"].createElement(Effect, {
+        reduceComponentsToState: reduceComponents,
+        handleStateChange: updateHead,
+        inAmpMode: amp_1.isInAmpMode(ampState)
+      }, children);
+    });
+  });
+}
+
+Head.rewind = Effect.rewind;
+exports["default"] = Head;
 
 /***/ }),
 
@@ -7173,6 +8448,116 @@ exports.getRouteRegex = getRouteRegex;
 
 /***/ }),
 
+/***/ "./node_modules/next-server/dist/lib/side-effect.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/side-effect.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _classCallCheck = __webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js");
+
+var _possibleConstructorReturn = __webpack_require__(/*! @babel/runtime-corejs2/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/possibleConstructorReturn.js");
+
+var _getPrototypeOf = __webpack_require__(/*! @babel/runtime-corejs2/helpers/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/getPrototypeOf.js");
+
+var _assertThisInitialized = __webpack_require__(/*! @babel/runtime-corejs2/helpers/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js");
+
+var _createClass = __webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/createClass.js");
+
+var _inherits = __webpack_require__(/*! @babel/runtime-corejs2/helpers/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/inherits.js");
+
+var _toConsumableArray = __webpack_require__(/*! @babel/runtime-corejs2/helpers/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/toConsumableArray.js");
+
+var _Set = __webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var isServer = false;
+
+exports["default"] = function () {
+  var mountedInstances = new _Set();
+  var state;
+
+  function emitChange(component) {
+    state = component.props.reduceComponentsToState(_toConsumableArray(mountedInstances), component.props);
+
+    if (component.props.handleStateChange) {
+      component.props.handleStateChange(state);
+    }
+  }
+
+  return (
+    /*#__PURE__*/
+    function (_react_1$Component) {
+      _inherits(_class, _react_1$Component);
+
+      _createClass(_class, null, [{
+        key: "rewind",
+        // Used when server rendering
+        value: function rewind() {
+          var recordedState = state;
+          state = undefined;
+          mountedInstances.clear();
+          return recordedState;
+        }
+      }]);
+
+      function _class(props) {
+        var _this;
+
+        _classCallCheck(this, _class);
+
+        _this = _possibleConstructorReturn(this, _getPrototypeOf(_class).call(this, props));
+
+        if (isServer) {
+          mountedInstances.add(_assertThisInitialized(_this));
+          emitChange(_assertThisInitialized(_this));
+        }
+
+        return _this;
+      }
+
+      _createClass(_class, [{
+        key: "componentDidMount",
+        value: function componentDidMount() {
+          mountedInstances.add(this);
+          emitChange(this);
+        }
+      }, {
+        key: "componentDidUpdate",
+        value: function componentDidUpdate() {
+          emitChange(this);
+        }
+      }, {
+        key: "componentWillUnmount",
+        value: function componentWillUnmount() {
+          mountedInstances["delete"](this);
+          emitChange(this);
+        }
+      }, {
+        key: "render",
+        value: function render() {
+          return null;
+        }
+      }]);
+
+      return _class;
+    }(react_1.Component)
+  );
+};
+
+/***/ }),
+
 /***/ "./node_modules/next-server/dist/lib/utils.js":
 /*!****************************************************!*\
   !*** ./node_modules/next-server/dist/lib/utils.js ***!
@@ -7350,9 +8735,9 @@ exports.SUPPORTS_PERFORMANCE_USER_TIMING = exports.SUPPORTS_PERFORMANCE && typeo
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FVEXU%2Fuwvexu.ca%2Fpages%2Findex.js!./":
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FGit%2Falexgirard%2Fpages%2Findex.js!./":
 /*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FVEXU%2Fuwvexu.ca%2Fpages%2Findex.js ***!
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FGit%2Falexgirard%2Fpages%2Findex.js ***!
   \************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -11043,6 +12428,1762 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/spotify-web-api-js/src/spotify-web-api.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/spotify-web-api-js/src/spotify-web-api.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* global module */
+
+
+/**
+ * Class representing the API
+ */
+var SpotifyWebApi = (function() {
+  var _baseUri = 'https://api.spotify.com/v1';
+  var _accessToken = null;
+  var _promiseImplementation = null;
+
+  var WrapPromiseWithAbort = function(promise, onAbort) {
+    promise.abort = onAbort;
+    return promise;
+  };
+
+  var _promiseProvider = function(promiseFunction, onAbort) {
+    var returnedPromise;
+    if (_promiseImplementation !== null) {
+      var deferred = _promiseImplementation.defer();
+      promiseFunction(
+        function(resolvedResult) {
+          deferred.resolve(resolvedResult);
+        },
+        function(rejectedResult) {
+          deferred.reject(rejectedResult);
+        }
+      );
+      returnedPromise = deferred.promise;
+    } else {
+      if (window.Promise) {
+        returnedPromise = new window.Promise(promiseFunction);
+      }
+    }
+
+    if (returnedPromise) {
+      return new WrapPromiseWithAbort(returnedPromise, onAbort);
+    } else {
+      return null;
+    }
+  };
+
+  var _extend = function() {
+    var args = Array.prototype.slice.call(arguments);
+    var target = args[0];
+    var objects = args.slice(1);
+    target = target || {};
+    objects.forEach(function(object) {
+      for (var j in object) {
+        if (object.hasOwnProperty(j)) {
+          target[j] = object[j];
+        }
+      }
+    });
+    return target;
+  };
+
+  var _buildUrl = function(url, parameters) {
+    var qs = '';
+    for (var key in parameters) {
+      if (parameters.hasOwnProperty(key)) {
+        var value = parameters[key];
+        qs += encodeURIComponent(key) + '=' + encodeURIComponent(value) + '&';
+      }
+    }
+    if (qs.length > 0) {
+      // chop off last '&'
+      qs = qs.substring(0, qs.length - 1);
+      url = url + '?' + qs;
+    }
+    return url;
+  };
+
+  var _performRequest = function(requestData, callback) {
+    var req = new XMLHttpRequest();
+
+    var promiseFunction = function(resolve, reject) {
+      function success(data) {
+        if (resolve) {
+          resolve(data);
+        }
+        if (callback) {
+          callback(null, data);
+        }
+      }
+
+      function failure() {
+        if (reject) {
+          reject(req);
+        }
+        if (callback) {
+          callback(req, null);
+        }
+      }
+
+      var type = requestData.type || 'GET';
+      req.open(type, _buildUrl(requestData.url, requestData.params));
+      if (_accessToken) {
+        req.setRequestHeader('Authorization', 'Bearer ' + _accessToken);
+      }
+      if (requestData.contentType) {
+        req.setRequestHeader('Content-Type', requestData.contentType)
+      }
+
+      req.onreadystatechange = function() {
+        if (req.readyState === 4) {
+          var data = null;
+          try {
+            data = req.responseText ? JSON.parse(req.responseText) : '';
+          } catch (e) {
+            console.error(e);
+          }
+
+          if (req.status >= 200 && req.status < 300) {
+            success(data);
+          } else {
+            failure();
+          }
+        }
+      };
+
+      if (type === 'GET') {
+        req.send(null);
+      } else {
+        var postData = null
+        if (requestData.postData) {
+          postData = requestData.contentType === 'image/jpeg' ? requestData.postData : JSON.stringify(requestData.postData)
+        }
+        req.send(postData);
+      }
+    };
+
+    if (callback) {
+      promiseFunction();
+      return null;
+    } else {
+      return _promiseProvider(promiseFunction, function() {
+        req.abort();
+      });
+    }
+  };
+
+  var _checkParamsAndPerformRequest = function(requestData, options, callback, optionsAlwaysExtendParams) {
+    var opt = {};
+    var cb = null;
+
+    if (typeof options === 'object') {
+      opt = options;
+      cb = callback;
+    } else if (typeof options === 'function') {
+      cb = options;
+    }
+
+    // options extend postData, if any. Otherwise they extend parameters sent in the url
+    var type = requestData.type || 'GET';
+    if (type !== 'GET' && requestData.postData && !optionsAlwaysExtendParams) {
+      requestData.postData = _extend(requestData.postData, opt);
+    } else {
+      requestData.params = _extend(requestData.params, opt);
+    }
+    return _performRequest(requestData, cb);
+  };
+
+  /**
+   * Creates an instance of the wrapper
+   * @constructor
+   */
+  var Constr = function() {};
+
+  Constr.prototype = {
+    constructor: SpotifyWebApi
+  };
+
+  /**
+   * Fetches a resource through a generic GET request.
+   *
+   * @param {string} url The URL to be fetched
+   * @param {function(Object,Object)} callback An optional callback
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getGeneric = function(url, callback) {
+    var requestData = {
+      url: url
+    };
+    return _checkParamsAndPerformRequest(requestData, callback);
+  };
+
+  /**
+   * Fetches information about the current user.
+   * See [Get Current User's Profile](https://developer.spotify.com/web-api/get-current-users-profile/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getMe = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/me'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches current user's saved tracks.
+   * See [Get Current User's Saved Tracks](https://developer.spotify.com/web-api/get-users-saved-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getMySavedTracks = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/tracks'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Adds a list of tracks to the current user's saved tracks.
+   * See [Save Tracks for Current User](https://developer.spotify.com/web-api/save-tracks-user/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} trackIds The ids of the tracks. If you know their Spotify URI it is easy
+   * to find their track id (e.g. spotify:track:<here_is_the_track_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.addToMySavedTracks = function(trackIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/tracks',
+      type: 'PUT',
+      postData: trackIds
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Remove a list of tracks from the current user's saved tracks.
+   * See [Remove Tracks for Current User](https://developer.spotify.com/web-api/remove-tracks-user/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} trackIds The ids of the tracks. If you know their Spotify URI it is easy
+   * to find their track id (e.g. spotify:track:<here_is_the_track_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.removeFromMySavedTracks = function(trackIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/tracks',
+      type: 'DELETE',
+      postData: trackIds
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Checks if the current user's saved tracks contains a certain list of tracks.
+   * See [Check Current User's Saved Tracks](https://developer.spotify.com/web-api/check-users-saved-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} trackIds The ids of the tracks. If you know their Spotify URI it is easy
+   * to find their track id (e.g. spotify:track:<here_is_the_track_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.containsMySavedTracks = function(trackIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/tracks/contains',
+      params: { ids: trackIds.join(',') }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Get a list of the albums saved in the current Spotify user's "Your Music" library.
+   * See [Get Current User's Saved Albums](https://developer.spotify.com/web-api/get-users-saved-albums/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getMySavedAlbums = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/albums'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Save one or more albums to the current user's "Your Music" library.
+   * See [Save Albums for Current User](https://developer.spotify.com/web-api/save-albums-user/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} albumIds The ids of the albums. If you know their Spotify URI, it is easy
+   * to find their album id (e.g. spotify:album:<here_is_the_album_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.addToMySavedAlbums = function(albumIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/albums',
+      type: 'PUT',
+      postData: albumIds
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Remove one or more albums from the current user's "Your Music" library.
+   * See [Remove Albums for Current User](https://developer.spotify.com/web-api/remove-albums-user/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} albumIds The ids of the albums. If you know their Spotify URI, it is easy
+   * to find their album id (e.g. spotify:album:<here_is_the_album_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.removeFromMySavedAlbums = function(albumIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/albums',
+      type: 'DELETE',
+      postData: albumIds
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Check if one or more albums is already saved in the current Spotify user's "Your Music" library.
+   * See [Check User's Saved Albums](https://developer.spotify.com/web-api/check-users-saved-albums/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} albumIds The ids of the albums. If you know their Spotify URI, it is easy
+   * to find their album id (e.g. spotify:album:<here_is_the_album_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.containsMySavedAlbums = function(albumIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/albums/contains',
+      params: { ids: albumIds.join(',') }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Get the current user’s top artists based on calculated affinity.
+   * See [Get a User’s Top Artists](https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getMyTopArtists = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/top/artists'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Get the current user’s top tracks based on calculated affinity.
+   * See [Get a User’s Top Tracks](https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getMyTopTracks = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/top/tracks'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Get tracks from the current user’s recently played tracks.
+   * See [Get Current User’s Recently Played Tracks](https://developer.spotify.com/web-api/web-api-personalization-endpoints/get-recently-played/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getMyRecentlyPlayedTracks = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/player/recently-played'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Adds the current user as a follower of one or more other Spotify users.
+   * See [Follow Artists or Users](https://developer.spotify.com/web-api/follow-artists-users/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} userIds The ids of the users. If you know their Spotify URI it is easy
+   * to find their user id (e.g. spotify:user:<here_is_the_user_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an empty value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.followUsers = function(userIds, callback) {
+    var requestData = {
+      url: _baseUri + '/me/following/',
+      type: 'PUT',
+      params: {
+        ids: userIds.join(','),
+        type: 'user'
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, callback);
+  };
+
+  /**
+   * Adds the current user as a follower of one or more artists.
+   * See [Follow Artists or Users](https://developer.spotify.com/web-api/follow-artists-users/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} artistIds The ids of the artists. If you know their Spotify URI it is easy
+   * to find their artist id (e.g. spotify:artist:<here_is_the_artist_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an empty value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.followArtists = function(artistIds, callback) {
+    var requestData = {
+      url: _baseUri + '/me/following/',
+      type: 'PUT',
+      params: {
+        ids: artistIds.join(','),
+        type: 'artist'
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, callback);
+  };
+
+  /**
+   * Add the current user as a follower of one playlist.
+   * See [Follow a Playlist](https://developer.spotify.com/web-api/follow-playlist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Object} options A JSON object with options that can be passed. For instance,
+   * whether you want the playlist to be followed privately ({public: false})
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an empty value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.followPlaylist = function(playlistId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/followers',
+      type: 'PUT',
+      postData: {}
+    };
+
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Removes the current user as a follower of one or more other Spotify users.
+   * See [Unfollow Artists or Users](https://developer.spotify.com/web-api/unfollow-artists-users/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} userIds The ids of the users. If you know their Spotify URI it is easy
+   * to find their user id (e.g. spotify:user:<here_is_the_user_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an empty value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.unfollowUsers = function(userIds, callback) {
+    var requestData = {
+      url: _baseUri + '/me/following/',
+      type: 'DELETE',
+      params: {
+        ids: userIds.join(','),
+        type: 'user'
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, callback);
+  };
+
+  /**
+   * Removes the current user as a follower of one or more artists.
+   * See [Unfollow Artists or Users](https://developer.spotify.com/web-api/unfollow-artists-users/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} artistIds The ids of the artists. If you know their Spotify URI it is easy
+   * to find their artist id (e.g. spotify:artist:<here_is_the_artist_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an empty value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.unfollowArtists = function(artistIds, callback) {
+    var requestData = {
+      url: _baseUri + '/me/following/',
+      type: 'DELETE',
+      params: {
+        ids: artistIds.join(','),
+        type: 'artist'
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, callback);
+  };
+
+  /**
+   * Remove the current user as a follower of one playlist.
+   * See [Unfollow a Playlist](https://developer.spotify.com/web-api/unfollow-playlist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an empty value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.unfollowPlaylist = function(playlistId, callback) {
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/followers',
+      type: 'DELETE'
+    };
+    return _checkParamsAndPerformRequest(requestData, callback);
+  };
+
+  /**
+   * Checks to see if the current user is following one or more other Spotify users.
+   * See [Check if Current User Follows Users or Artists](https://developer.spotify.com/web-api/check-current-user-follows/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} userIds The ids of the users. If you know their Spotify URI it is easy
+   * to find their user id (e.g. spotify:user:<here_is_the_user_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an array of boolean values that indicate
+   * whether the user is following the users sent in the request.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.isFollowingUsers = function(userIds, callback) {
+    var requestData = {
+      url: _baseUri + '/me/following/contains',
+      type: 'GET',
+      params: {
+        ids: userIds.join(','),
+        type: 'user'
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, callback);
+  };
+
+  /**
+   * Checks to see if the current user is following one or more artists.
+   * See [Check if Current User Follows](https://developer.spotify.com/web-api/check-current-user-follows/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} artistIds The ids of the artists. If you know their Spotify URI it is easy
+   * to find their artist id (e.g. spotify:artist:<here_is_the_artist_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an array of boolean values that indicate
+   * whether the user is following the artists sent in the request.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.isFollowingArtists = function(artistIds, callback) {
+    var requestData = {
+      url: _baseUri + '/me/following/contains',
+      type: 'GET',
+      params: {
+        ids: artistIds.join(','),
+        type: 'artist'
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, callback);
+  };
+
+  /**
+   * Check to see if one or more Spotify users are following a specified playlist.
+   * See [Check if Users Follow a Playlist](https://developer.spotify.com/web-api/check-user-following-playlist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Array<string>} userIds The ids of the users. If you know their Spotify URI it is easy
+   * to find their user id (e.g. spotify:user:<here_is_the_user_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an array of boolean values that indicate
+   * whether the users are following the playlist sent in the request.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.areFollowingPlaylist = function(playlistId, userIds, callback) {
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/followers/contains',
+      type: 'GET',
+      params: {
+        ids: userIds.join(',')
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, callback);
+  };
+
+  /**
+   * Get the current user's followed artists.
+   * See [Get User's Followed Artists](https://developer.spotify.com/web-api/get-followed-artists/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} [options] Options, being after and limit.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is an object with a paged object containing
+   * artists.
+   * @returns {Promise|undefined} A promise that if successful, resolves to an object containing a paging object which contains
+   * artists objects. Not returned if a callback is given.
+   */
+  Constr.prototype.getFollowedArtists = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/following',
+      type: 'GET',
+      params: {
+        type: 'artist'
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches information about a specific user.
+   * See [Get a User's Profile](https://developer.spotify.com/web-api/get-users-profile/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} userId The id of the user. If you know the Spotify URI it is easy
+   * to find the id (e.g. spotify:user:<here_is_the_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getUser = function(userId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/users/' + encodeURIComponent(userId)
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches a list of the current user's playlists.
+   * See [Get a List of a User's Playlists](https://developer.spotify.com/web-api/get-list-users-playlists/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} userId An optional id of the user. If you know the Spotify URI it is easy
+   * to find the id (e.g. spotify:user:<here_is_the_id>). If not provided, the id of the user that granted
+   * the permissions will be used.
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getUserPlaylists = function(userId, options, callback) {
+    var requestData;
+    if (typeof userId === 'string') {
+      requestData = {
+        url: _baseUri + '/users/' + encodeURIComponent(userId) + '/playlists'
+      };
+    } else {
+      requestData = {
+        url: _baseUri + '/me/playlists'
+      };
+      callback = options;
+      options = userId;
+    }
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches a specific playlist.
+   * See [Get a Playlist](https://developer.spotify.com/web-api/get-playlist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getPlaylist = function(playlistId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches the tracks from a specific playlist.
+   * See [Get a Playlist's Tracks](https://developer.spotify.com/web-api/get-playlists-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getPlaylistTracks = function(playlistId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/tracks'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Creates a playlist and stores it in the current user's library.
+   * See [Create a Playlist](https://developer.spotify.com/web-api/create-playlist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} userId The id of the user. If you know the Spotify URI it is easy
+   * to find the id (e.g. spotify:user:<here_is_the_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.createPlaylist = function(userId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/users/' + encodeURIComponent(userId) + '/playlists',
+      type: 'POST',
+      postData: options
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Change a playlist's name and public/private state
+   * See [Change a Playlist's Details](https://developer.spotify.com/web-api/change-playlist-details/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Object} data A JSON object with the data to update. E.g. {name: 'A new name', public: true}
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.changePlaylistDetails = function(playlistId, data, callback) {
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId,
+      type: 'PUT',
+      postData: data
+    };
+    return _checkParamsAndPerformRequest(requestData, data, callback);
+  };
+
+  /**
+   * Add tracks to a playlist.
+   * See [Add Tracks to a Playlist](https://developer.spotify.com/web-api/add-tracks-to-playlist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Array<string>} uris An array of Spotify URIs for the tracks
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.addTracksToPlaylist = function(playlistId, uris, options, callback) {
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/tracks',
+      type: 'POST',
+      postData: {
+        uris: uris
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback, true);
+  };
+
+  /**
+   * Replace the tracks of a playlist
+   * See [Replace a Playlist's Tracks](https://developer.spotify.com/web-api/replace-playlists-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Array<string>} uris An array of Spotify URIs for the tracks
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.replaceTracksInPlaylist = function(playlistId, uris, callback) {
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/tracks',
+      type: 'PUT',
+      postData: { uris: uris }
+    };
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Reorder tracks in a playlist
+   * See [Reorder a Playlist’s Tracks](https://developer.spotify.com/web-api/reorder-playlists-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {number} rangeStart The position of the first track to be reordered.
+   * @param {number} insertBefore The position where the tracks should be inserted. To reorder the tracks to
+   * the end of the playlist, simply set insert_before to the position after the last track.
+   * @param {Object} options An object with optional parameters (range_length, snapshot_id)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.reorderTracksInPlaylist = function(playlistId, rangeStart, insertBefore, options, callback) {
+    /* eslint-disable camelcase */
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/tracks',
+      type: 'PUT',
+      postData: {
+        range_start: rangeStart,
+        insert_before: insertBefore
+      }
+    };
+    /* eslint-enable camelcase */
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Remove tracks from a playlist
+   * See [Remove Tracks from a Playlist](https://developer.spotify.com/web-api/remove-tracks-playlist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Array<Object>} uris An array of tracks to be removed. Each element of the array can be either a
+   * string, in which case it is treated as a URI, or an object containing the properties `uri` (which is a
+   * string) and `positions` (which is an array of integers).
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.removeTracksFromPlaylist = function(playlistId, uris, callback) {
+    var dataToBeSent = uris.map(function(uri) {
+      if (typeof uri === 'string') {
+        return { uri: uri };
+      } else {
+        return uri;
+      }
+    });
+
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/tracks',
+      type: 'DELETE',
+      postData: { tracks: dataToBeSent }
+    };
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Remove tracks from a playlist, specifying a snapshot id.
+   * See [Remove Tracks from a Playlist](https://developer.spotify.com/web-api/remove-tracks-playlist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Array<Object>} uris An array of tracks to be removed. Each element of the array can be either a
+   * string, in which case it is treated as a URI, or an object containing the properties `uri` (which is a
+   * string) and `positions` (which is an array of integers).
+   * @param {string} snapshotId The playlist's snapshot ID against which you want to make the changes
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.removeTracksFromPlaylistWithSnapshotId = function(playlistId, uris, snapshotId, callback) {
+    var dataToBeSent = uris.map(function(uri) {
+      if (typeof uri === 'string') {
+        return { uri: uri };
+      } else {
+        return uri;
+      }
+    });
+    /* eslint-disable camelcase */
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/tracks',
+      type: 'DELETE',
+      postData: {
+        tracks: dataToBeSent,
+        snapshot_id: snapshotId
+      }
+    };
+    /* eslint-enable camelcase */
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Remove tracks from a playlist, specifying the positions of the tracks to be removed.
+   * See [Remove Tracks from a Playlist](https://developer.spotify.com/web-api/remove-tracks-playlist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {Array<number>} positions array of integers containing the positions of the tracks to remove
+   * from the playlist.
+   * @param {string} snapshotId The playlist's snapshot ID against which you want to make the changes
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.removeTracksFromPlaylistInPositions = function(playlistId, positions, snapshotId, callback) {
+    /* eslint-disable camelcase */
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/tracks',
+      type: 'DELETE',
+      postData: {
+        positions: positions,
+        snapshot_id: snapshotId
+      }
+    };
+    /* eslint-enable camelcase */
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Upload a custom playlist cover image.
+   * See [Upload A Custom Playlist Cover Image](https://developer.spotify.com/web-api/upload-a-custom-playlist-cover-image/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+   * to find the playlist id (e.g. spotify:user:xxxx:playlist:<here_is_the_playlist_id>)
+   * @param {string} imageData Base64 encoded JPEG image data, maximum payload size is 256 KB.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.uploadCustomPlaylistCoverImage = function(playlistId, imageData, callback) {
+    var requestData = {
+      url: _baseUri + '/playlists/' + playlistId + '/images',
+      type: 'PUT',
+      postData: imageData.replace(/^data:image\/jpeg;base64,/, ''),
+      contentType: 'image/jpeg'
+    };
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Fetches an album from the Spotify catalog.
+   * See [Get an Album](https://developer.spotify.com/web-api/get-album/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} albumId The id of the album. If you know the Spotify URI it is easy
+   * to find the album id (e.g. spotify:album:<here_is_the_album_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getAlbum = function(albumId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/albums/' + albumId
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches the tracks of an album from the Spotify catalog.
+   * See [Get an Album's Tracks](https://developer.spotify.com/web-api/get-albums-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} albumId The id of the album. If you know the Spotify URI it is easy
+   * to find the album id (e.g. spotify:album:<here_is_the_album_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getAlbumTracks = function(albumId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/albums/' + albumId + '/tracks'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches multiple albums from the Spotify catalog.
+   * See [Get Several Albums](https://developer.spotify.com/web-api/get-several-albums/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} albumIds The ids of the albums. If you know their Spotify URI it is easy
+   * to find their album id (e.g. spotify:album:<here_is_the_album_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getAlbums = function(albumIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/albums/',
+      params: { ids: albumIds.join(',') }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches a track from the Spotify catalog.
+   * See [Get a Track](https://developer.spotify.com/web-api/get-track/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} trackId The id of the track. If you know the Spotify URI it is easy
+   * to find the track id (e.g. spotify:track:<here_is_the_track_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getTrack = function(trackId, options, callback) {
+    var requestData = {};
+    requestData.url = _baseUri + '/tracks/' + trackId;
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches multiple tracks from the Spotify catalog.
+   * See [Get Several Tracks](https://developer.spotify.com/web-api/get-several-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} trackIds The ids of the tracks. If you know their Spotify URI it is easy
+   * to find their track id (e.g. spotify:track:<here_is_the_track_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getTracks = function(trackIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/tracks/',
+      params: { ids: trackIds.join(',') }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches an artist from the Spotify catalog.
+   * See [Get an Artist](https://developer.spotify.com/web-api/get-artist/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} artistId The id of the artist. If you know the Spotify URI it is easy
+   * to find the artist id (e.g. spotify:artist:<here_is_the_artist_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getArtist = function(artistId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/artists/' + artistId
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches multiple artists from the Spotify catalog.
+   * See [Get Several Artists](https://developer.spotify.com/web-api/get-several-artists/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} artistIds The ids of the artists. If you know their Spotify URI it is easy
+   * to find their artist id (e.g. spotify:artist:<here_is_the_artist_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getArtists = function(artistIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/artists/',
+      params: { ids: artistIds.join(',') }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches the albums of an artist from the Spotify catalog.
+   * See [Get an Artist's Albums](https://developer.spotify.com/web-api/get-artists-albums/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} artistId The id of the artist. If you know the Spotify URI it is easy
+   * to find the artist id (e.g. spotify:artist:<here_is_the_artist_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getArtistAlbums = function(artistId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/artists/' + artistId + '/albums'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches a list of top tracks of an artist from the Spotify catalog, for a specific country.
+   * See [Get an Artist's Top Tracks](https://developer.spotify.com/web-api/get-artists-top-tracks/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} artistId The id of the artist. If you know the Spotify URI it is easy
+   * to find the artist id (e.g. spotify:artist:<here_is_the_artist_id>)
+   * @param {string} countryId The id of the country (e.g. ES for Spain or US for United States)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getArtistTopTracks = function(artistId, countryId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/artists/' + artistId + '/top-tracks',
+      params: { country: countryId }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches a list of artists related with a given one from the Spotify catalog.
+   * See [Get an Artist's Related Artists](https://developer.spotify.com/web-api/get-related-artists/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} artistId The id of the artist. If you know the Spotify URI it is easy
+   * to find the artist id (e.g. spotify:artist:<here_is_the_artist_id>)
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getArtistRelatedArtists = function(artistId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/artists/' + artistId + '/related-artists'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches a list of Spotify featured playlists (shown, for example, on a Spotify player's "Browse" tab).
+   * See [Get a List of Featured Playlists](https://developer.spotify.com/web-api/get-list-featured-playlists/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getFeaturedPlaylists = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/browse/featured-playlists'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches a list of new album releases featured in Spotify (shown, for example, on a Spotify player's "Browse" tab).
+   * See [Get a List of New Releases](https://developer.spotify.com/web-api/get-list-new-releases/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getNewReleases = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/browse/new-releases'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Get a list of categories used to tag items in Spotify (on, for example, the Spotify player's "Browse" tab).
+   * See [Get a List of Categories](https://developer.spotify.com/web-api/get-list-categories/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getCategories = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/browse/categories'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Get a single category used to tag items in Spotify (on, for example, the Spotify player's "Browse" tab).
+   * See [Get a Category](https://developer.spotify.com/web-api/get-category/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} categoryId The id of the category. These can be found with the getCategories function
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getCategory = function(categoryId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/browse/categories/' + categoryId
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Get a list of Spotify playlists tagged with a particular category.
+   * See [Get a Category's Playlists](https://developer.spotify.com/web-api/get-categorys-playlists/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} categoryId The id of the category. These can be found with the getCategories function
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getCategoryPlaylists = function(categoryId, options, callback) {
+    var requestData = {
+      url: _baseUri + '/browse/categories/' + categoryId + '/playlists'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Get Spotify catalog information about artists, albums, tracks or playlists that match a keyword string.
+   * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} query The search query
+   * @param {Array<string>} types An array of item types to search across.
+   * Valid types are: 'album', 'artist', 'playlist', and 'track'.
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.search = function(query, types, options, callback) {
+    var requestData = {
+      url: _baseUri + '/search/',
+      params: {
+        q: query,
+        type: types.join(',')
+      }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Fetches albums from the Spotify catalog according to a query.
+   * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} query The search query
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.searchAlbums = function(query, options, callback) {
+    return this.search(query, ['album'], options, callback);
+  };
+
+  /**
+   * Fetches artists from the Spotify catalog according to a query.
+   * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} query The search query
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.searchArtists = function(query, options, callback) {
+    return this.search(query, ['artist'], options, callback);
+  };
+
+  /**
+   * Fetches tracks from the Spotify catalog according to a query.
+   * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} query The search query
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.searchTracks = function(query, options, callback) {
+    return this.search(query, ['track'], options, callback);
+  };
+
+  /**
+   * Fetches playlists from the Spotify catalog according to a query.
+   * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} query The search query
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.searchPlaylists = function(query, options, callback) {
+    return this.search(query, ['playlist'], options, callback);
+  };
+
+  /**
+   * Get audio features for a single track identified by its unique Spotify ID.
+   * See [Get Audio Features for a Track](https://developer.spotify.com/web-api/get-audio-features/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} trackId The id of the track. If you know the Spotify URI it is easy
+   * to find the track id (e.g. spotify:track:<here_is_the_track_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getAudioFeaturesForTrack = function(trackId, callback) {
+    var requestData = {};
+    requestData.url = _baseUri + '/audio-features/' + trackId;
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Get audio features for multiple tracks based on their Spotify IDs.
+   * See [Get Audio Features for Several Tracks](https://developer.spotify.com/web-api/get-several-audio-features/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} trackIds The ids of the tracks. If you know their Spotify URI it is easy
+   * to find their track id (e.g. spotify:track:<here_is_the_track_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getAudioFeaturesForTracks = function(trackIds, callback) {
+    var requestData = {
+      url: _baseUri + '/audio-features',
+      params: { ids: trackIds }
+    };
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Get audio analysis for a single track identified by its unique Spotify ID.
+   * See [Get Audio Analysis for a Track](https://developer.spotify.com/web-api/get-audio-analysis/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {string} trackId The id of the track. If you know the Spotify URI it is easy
+   * to find the track id (e.g. spotify:track:<here_is_the_track_id>)
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getAudioAnalysisForTrack = function(trackId, callback) {
+    var requestData = {};
+    requestData.url = _baseUri + '/audio-analysis/' + trackId;
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Create a playlist-style listening experience based on seed artists, tracks and genres.
+   * See [Get Recommendations Based on Seeds](https://developer.spotify.com/web-api/get-recommendations/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getRecommendations = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/recommendations'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Retrieve a list of available genres seed parameter values for recommendations.
+   * See [Available Genre Seeds](https://developer.spotify.com/web-api/get-recommendations/#available-genre-seeds) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getAvailableGenreSeeds = function(callback) {
+    var requestData = {
+      url: _baseUri + '/recommendations/available-genre-seeds'
+    };
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Get information about a user’s available devices.
+   * See [Get a User’s Available Devices](https://developer.spotify.com/web-api/get-a-users-available-devices/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getMyDevices = function(callback) {
+    var requestData = {
+      url: _baseUri + '/me/player/devices'
+    };
+    return _checkParamsAndPerformRequest(requestData, {}, callback);
+  };
+
+  /**
+   * Get information about the user’s current playback state, including track, track progress, and active device.
+   * See [Get Information About The User’s Current Playback](https://developer.spotify.com/web-api/get-information-about-the-users-current-playback/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getMyCurrentPlaybackState = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/player'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Get the object currently being played on the user’s Spotify account.
+   * See [Get the User’s Currently Playing Track](https://developer.spotify.com/web-api/get-the-users-currently-playing-track/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.getMyCurrentPlayingTrack = function(options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/player/currently-playing'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Transfer playback to a new device and determine if it should start playing.
+   * See [Transfer a User’s Playback](https://developer.spotify.com/web-api/transfer-a-users-playback/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Array<string>} deviceIds A JSON array containing the ID of the device on which playback should be started/transferred.
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.transferMyPlayback = function(deviceIds, options, callback) {
+    var postData = options || {};
+    postData.device_ids = deviceIds;
+    var requestData = {
+      type: 'PUT',
+      url: _baseUri + '/me/player',
+      postData: postData
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Start a new context or resume current playback on the user’s active device.
+   * See [Start/Resume a User’s Playback](https://developer.spotify.com/web-api/start-a-users-playback/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.play = function(options, callback) {
+    options = options || {};
+    var params = 'device_id' in options ? {device_id: options.device_id} : null;
+    var postData = {};
+    ['context_uri', 'uris', 'offset', 'position_ms'].forEach(function(field) {
+      if (field in options) {
+        postData[field] = options[field];
+      }
+    });
+    var requestData = {
+      type: 'PUT',
+      url: _baseUri + '/me/player/play',
+      params: params,
+      postData: postData
+    };
+
+    // need to clear options so it doesn't add all of them to the query params
+    var newOptions = typeof options === 'function' ? options : {};
+    return _checkParamsAndPerformRequest(requestData, newOptions, callback);
+  };
+
+  /**
+   * Pause playback on the user’s account.
+   * See [Pause a User’s Playback](https://developer.spotify.com/web-api/pause-a-users-playback/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.pause = function(options, callback) {
+    options = options || {};
+    var params = 'device_id' in options ? {device_id: options.device_id} : null;
+    var requestData = {
+      type: 'PUT',
+      url: _baseUri + '/me/player/pause',
+      params: params
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Skips to next track in the user’s queue.
+   * See [Skip User’s Playback To Next Track](https://developer.spotify.com/web-api/skip-users-playback-to-next-track/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.skipToNext = function(options, callback) {
+    options = options || {};
+    var params = 'device_id' in options ? {device_id: options.device_id} : null;
+    var requestData = {
+      type: 'POST',
+      url: _baseUri + '/me/player/next',
+      params: params
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Skips to previous track in the user’s queue.
+   * Note that this will ALWAYS skip to the previous track, regardless of the current track’s progress.
+   * Returning to the start of the current track should be performed using `.seek()`
+   * See [Skip User’s Playback To Previous Track](https://developer.spotify.com/web-api/skip-users-playback-to-next-track/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.skipToPrevious = function(options, callback) {
+    options = options || {};
+    var params = 'device_id' in options ? {device_id: options.device_id} : null;
+    var requestData = {
+      type: 'POST',
+      url: _baseUri + '/me/player/previous',
+      params: params
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Seeks to the given position in the user’s currently playing track.
+   * See [Seek To Position In Currently Playing Track](https://developer.spotify.com/web-api/seek-to-position-in-currently-playing-track/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {number} position_ms The position in milliseconds to seek to. Must be a positive number.
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.seek = function(position_ms, options, callback) {
+    options = options || {};
+    var params = {
+      position_ms: position_ms
+    };
+    if ('device_id' in options) {
+      params.device_id = options.device_id;
+    }
+    var requestData = {
+      type: 'PUT',
+      url: _baseUri + '/me/player/seek',
+      params: params
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Set the repeat mode for the user’s playback. Options are repeat-track, repeat-context, and off.
+   * See [Set Repeat Mode On User’s Playback](https://developer.spotify.com/web-api/set-repeat-mode-on-users-playback/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {String} state A string set to 'track', 'context' or 'off'.
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.setRepeat = function(state, options, callback) {
+    options = options || {};
+    var params = {
+      state: state
+    };
+    if ('device_id' in options) {
+      params.device_id = options.device_id;
+    }
+    var requestData = {
+      type: 'PUT',
+      url: _baseUri + '/me/player/repeat',
+      params: params
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Set the volume for the user’s current playback device.
+   * See [Set Volume For User’s Playback](https://developer.spotify.com/web-api/set-volume-for-users-playback/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {number} volume_percent The volume to set. Must be a value from 0 to 100 inclusive.
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.setVolume = function(volume_percent, options, callback) {
+    options = options || {};
+    var params = {
+      volume_percent: volume_percent
+    };
+    if ('device_id' in options) {
+      params.device_id = options.device_id;
+    }
+    var requestData = {
+      type: 'PUT',
+      url: _baseUri + '/me/player/volume',
+      params: params
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Toggle shuffle on or off for user’s playback.
+   * See [Toggle Shuffle For User’s Playback](https://developer.spotify.com/web-api/toggle-shuffle-for-users-playback/) on
+   * the Spotify Developer site for more information about the endpoint.
+   *
+   * @param {bool} state Whether or not to shuffle user's playback.
+   * @param {Object} options A JSON object with options that can be passed.
+   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+   * one is the error object (null if no error), and the second is the value if the request succeeded.
+   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+   */
+  Constr.prototype.setShuffle = function(state, options, callback) {
+    options = options || {};
+    var params = {
+      state: state
+    };
+    if ('device_id' in options) {
+      params.device_id = options.device_id;
+    }
+    var requestData = {
+      type: 'PUT',
+      url: _baseUri + '/me/player/shuffle',
+      params: params
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
+  /**
+   * Gets the access token in use.
+   *
+   * @return {string} accessToken The access token
+   */
+  Constr.prototype.getAccessToken = function() {
+    return _accessToken;
+  };
+
+  /**
+   * Sets the access token to be used.
+   * See [the Authorization Guide](https://developer.spotify.com/web-api/authorization-guide/) on
+   * the Spotify Developer site for more information about obtaining an access token.
+   *
+   * @param {string} accessToken The access token
+   * @return {void}
+   */
+  Constr.prototype.setAccessToken = function(accessToken) {
+    _accessToken = accessToken;
+  };
+
+  /**
+   * Sets an implementation of Promises/A+ to be used. E.g. Q, when.
+   * See [Conformant Implementations](https://github.com/promises-aplus/promises-spec/blob/master/implementations.md)
+   * for a list of some available options
+   *
+   * @param {Object} PromiseImplementation A Promises/A+ valid implementation
+   * @throws {Error} If the implementation being set doesn't conform with Promises/A+
+   * @return {void}
+   */
+  Constr.prototype.setPromiseImplementation = function(PromiseImplementation) {
+    var valid = false;
+    try {
+      var p = new PromiseImplementation(function(resolve) {
+        resolve();
+      });
+      if (typeof p.then === 'function' && typeof p.catch === 'function') {
+        valid = true;
+      }
+    } catch (e) {
+      console.error(e);
+    }
+    if (valid) {
+      _promiseImplementation = PromiseImplementation;
+    } else {
+      throw new Error('Unsupported implementation of Promises/A+');
+    }
+  };
+
+  return Constr;
+})();
+
+if ( true && typeof module.exports === 'object') {
+  module.exports = SpotifyWebApi;
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/styled-components/dist/styled-components.browser.esm.js":
 /*!******************************************************************************!*\
   !*** ./node_modules/styled-components/dist/styled-components.browser.esm.js ***!
@@ -14481,25 +17622,20 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/NavBar */ "./components/NavBar.jsx");
-/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Hero */ "./components/Hero.jsx");
-/* harmony import */ var _components_HeroSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/HeroSection */ "./components/HeroSection.jsx");
-/* harmony import */ var _components_HeroText__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/HeroText */ "./components/HeroText.jsx");
-/* harmony import */ var _components_HeaderSection__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/HeaderSection */ "./components/HeaderSection.jsx");
-/* harmony import */ var _components_BodySection__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/BodySection */ "./components/BodySection.jsx");
-/* harmony import */ var _components_CenteredSection__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/CenteredSection */ "./components/CenteredSection.jsx");
+/* harmony import */ var spotify_web_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! spotify-web-api-js */ "./node_modules/spotify-web-api-js/src/spotify-web-api.js");
+/* harmony import */ var spotify_web_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(spotify_web_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Head */ "./components/Head.js");
+/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/NavBar */ "./components/NavBar.jsx");
+/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Hero */ "./components/Hero.js");
+/* harmony import */ var _components_Content__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Content */ "./components/Content.jsx");
+/* harmony import */ var _components_Section__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Section */ "./components/Section.jsx");
+/* harmony import */ var _components_ImageText__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ImageText */ "./components/ImageText.jsx");
 /* harmony import */ var _components_Link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Link */ "./components/Link.jsx");
-/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Button */ "./components/Button.jsx");
-/* harmony import */ var _components_ImageSection__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/ImageSection */ "./components/ImageSection.jsx");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.jsx");
-/* harmony import */ var _components_Event__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Event */ "./components/Event.jsx");
-/* harmony import */ var _events__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../events */ "./events.js");
-/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Form */ "./components/Form.js");
-/* harmony import */ var _components_ImageGrid__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/ImageGrid */ "./components/ImageGrid.jsx");
-/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../main.scss */ "./main.scss");
-/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_16__);
-var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/pages/index.js";
-
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.jsx");
+/* harmony import */ var _components_Styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Styles */ "./components/Styles.jsx");
+/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../main.scss */ "./main.scss");
+/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_11__);
+var _jsxFileName = "/Users/alexgirard/Documents/Git/alexgirard/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -14513,252 +17649,269 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+var token = 'BQA-B0xTcNL_cFLs3qQ89HhRm8kMI52LpkWHrxbw7DwU9RVYEMSEsEg5K6TlNgu3Zr6viBZNYOMv9odKuNfXwXNJVoThuk0v5HK-4x0339kg61fnYDe474v6l7IPWBxlnD1_EUBXGVj_KS097GL1HikYBhu5lyh29G4JzlkiZ2sae_JN5Lo9A-4ol07E7YE';
 
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx("div", {
+var Index = function Index(_ref) {
+  var spotifyApi = _ref.spotifyApi,
+      playlist = _ref.playlist;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Head__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }, __jsx(_components_Hero__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    imageUrl: "http://www.innovateli.com/wp/wp-content/uploads/2016/02/IMG_6664-777x437.jpg",
+  }), __jsx(_components_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, __jsx(_components_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }), __jsx(_components_HeroSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), __jsx(_components_Content__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
-  }, __jsx(_components_HeroText__WEBPACK_IMPORTED_MODULE_4__["HeroTitle"], {
+  }, __jsx(_components_Section__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    subtitle: "ABOUT",
+    hideLine: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }, "LEARN.", __jsx("br", {
+  }, __jsx(_components_ImageText__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    imageSrc: "/static/alex.png",
+    imageSize: "230px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
-  }), "BUILD.", __jsx("br", {
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "Hi. I\u2019m Alex, a 3A Software Engineering student currently studying at the University of Waterloo."), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
+    size: 2,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }), "COMPETE."), __jsx(_components_HeroText__WEBPACK_IMPORTED_MODULE_4__["HeroSubtitle"], {
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, "I\u2019m passionate about web development and user experiences. I love taking on new challenges and creating innovative solutions.\u2028"), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
+    size: 2,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }, "UW VEXU Robotics"))), __jsx(_components_HeaderSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    id: "about",
+  }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 31
     },
     __self: this
-  }, "WHO WE ARE"), __jsx(_components_BodySection__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "In my free time I love to take hip hop classes, dabble in robotics, play some minecraft, and experience some concerts.")))), __jsx(_components_Section__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    subtitle: "EXPERIENCE",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
-  }, "We\u2019re a team of University of Waterloo students who design, build, and program robots to compete at the VEXU World Championships. ", __jsx("br", {
+  }, __jsx(_components_ImageText__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    imageSrc: "/static/hockeystick.png",
+    bottomPadding: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37
     },
     __self: this
-  }), __jsx("br", {
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
-  }), " Each year we build two robots for a different game challenge (you can see this year\u2019s game", ' ', __jsx(_components_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    href: "https://www.youtube.com/watch?v=_JVQOiw_OUU",
-    external: true,
+  }, "Hockeystick"), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
-  }, "here"), "). Both robots have a 1 minute and 45 second autonomous period, and a 45 second driver control period.", __jsx("br", {
+  }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 41
     },
     __self: this
-  }), __jsx("br", {
+  }, "Exclusive database which lets you track companies, investments and trends in the tech ecosystem."), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 42
     },
     __self: this
-  }), "We started this team so that any student could join and learn more about robotics. Anyone is welcome to join.", __jsx("br", {
+  }), __jsx("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, "Front End Developer"))), __jsx(_components_ImageText__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    imageSrc: "/static/properly.png",
+    bottomPadding: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
     },
     __self: this
-  }), __jsx("br", {
+  }, "Properly"), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: this
-  }), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_9__["Button"], {
-    href: "https://forms.gle/WGnEERX5HZF1xDwb7",
-    external: true,
+  }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     },
     __self: this
-  }, "JOIN US")), __jsx(_components_ImageSection__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    imageUrls: ['https://guinnessworldrecords.com/Images/Largest-robot-competition-VEX-Worlds_tcm25-426572.jpg', 'https://msutoday.msu.edu/_/img/assets/2017/robotics-tournament.jpg', 'https://i.ytimg.com/vi/CDDGBcs0TFM/hqdefault.jpg'],
+  }, "Provides Canadians with a fast, simple and easy way to sell their home.\u2028"), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 53
     },
     __self: this
-  }), __jsx(_components_HeaderSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    id: "events",
+  }), __jsx("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, "Full Stack Developer"))), __jsx(_components_ImageText__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    imageSrc: "/static/sunlife.png",
+    bottomPadding: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: this
+  }, "Sun Life Financial"), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }, "Financial services to help Canadians achieve lifetime financial security."), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }), __jsx("h4", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
     },
     __self: this
-  }, "EVENTS"), __jsx(_components_BodySection__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Application Developer"))), __jsx(_components_ImageText__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    imageSrc: "/static/waterloo.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 68
     },
     __self: this
-  }, _events__WEBPACK_IMPORTED_MODULE_13__["events"].map(function (event, index) {
-    return __jsx(_components_Event__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      month: event.month,
-      day: event.day,
-      dayOfWeek: event.weekday,
-      space: index !== _events__WEBPACK_IMPORTED_MODULE_13__["events"].length - 1,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 67
-      },
-      __self: this
-    }, event.message);
-  })), __jsx(_components_CenteredSection__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    id: "sponsor",
-    imageUrl: "http://media2.govtech.com/images/940*529/Starstruck_Vex_Robotics_CV_2017-01-11.jpg",
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }, "Robotics"), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "University of Waterloo\u2019s VEXU robotics and Biomechatronics teams."), __jsx(_components_Styles__WEBPACK_IMPORTED_MODULE_10__["TextBreak"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
     },
     __self: this
-  }, "UWaterloo VEXU Robotics would not be possible without the help of our genourous sponsors.", __jsx("br", {
+  }), __jsx("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 74
     },
     __self: this
-  }), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }), "Interested in becoming a sponsor? ", __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: this
-  }), "Click the button below for more information.", __jsx("br", {
+  }, "Programming Lead")))), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 80
     },
     __self: this
-  }), __jsx("br", {
+  }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 81
     },
     __self: this
-  }), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_9__["DarkButton"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: this
-  }, "BECOME A SPONSOR")), __jsx(_components_HeaderSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: this
-  }, "SPONSORS"), __jsx(_components_ImageGrid__WEBPACK_IMPORTED_MODULE_15__["default"], {
-    imageUrls: ['https://uwaterloo.ca/engineering-endowment-fund/sites/ca.engineering-endowment-fund/files/uploads/images/weef_logo_yellow_0.png', 'https://uwaterloo.ca/math-endowment-fund/sites/ca.math-endowment-fund/files/uploads/images/mef_-_final_logo.png', 'https://www.engsoc.uwaterloo.ca/wp-content/uploads/2018/01/cropped-EngSoc_Square_Logo-300x300.png', 'https://www.robotevents.com/uploads/events/33015/d6e8f72b99f4b44b1d27cd636f5d4d73.jpg', 'https://uwaterloo.ca/robohub/sites/ca.robohub/files/uploads/images/main-robohub-logo-rgb-1000px.png', 'https://upload.wikimedia.org/wikipedia/en/3/38/Vex-Logo.jpg', 'http://nserc-hi-am.ca/wp-content/uploads/2018/11/Waterloo_Engineering_logo_rgb-1-e1542983138323.png'],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
-  }), __jsx(_components_HeaderSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    id: "contact",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97
-    },
-    __self: this
-  }, "CONTACT US"), __jsx(_components_BodySection__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98
-    },
-    __self: this
-  }, "Whether you are a student wanting to join, or a potential sponsor, we'd love to hear from you! Fill out the form below to get in touch!", __jsx(_components_Form__WEBPACK_IMPORTED_MODULE_14__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 101
-    },
-    __self: this
-  })), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103
-    },
-    __self: this
-  }));
-});
+  }, "\xA9 2019 Alexandra Girard"))));
+}; // Index.getInitialProps = async () => {
+//   const spotifyApi = await new SpotifyWebApi();
+//   spotifyApi.setAccessToken(token);
+//   const playlist = spotifyApi.getPlaylist('4vHIKV7j4QcZwgzGQcZg1x');
+//
+//   return { spotifyApi, playlist };
+// };
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!****************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FVEXU%2Fuwvexu.ca%2Fpages%2Findex.js ***!
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FGit%2Falexgirard%2Fpages%2Findex.js ***!
   \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FVEXU%2Fuwvexu.ca%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FVEXU%2Fuwvexu.ca%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FGit%2Falexgirard%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FGit%2Falexgirard%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -14774,5 +17927,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
