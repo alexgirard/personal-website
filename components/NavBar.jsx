@@ -37,7 +37,7 @@ const NavBar = () => (
       <NextLink href="https://open.spotify.com/user/alexgirard9?si=T_2z-4tdR5ilMaWwm60-ZQ" external><i className="fa fa-spotify"/></NextLink>
       <NextLink href="https://www.linkedin.com/alexandra-girard" external><i className="fa fa-linkedin"/></NextLink>
       <NextLink href="https://github.com/alexgirard" external><i className="fa fa-github"/></NextLink>
-      <NextLink href="https://docs.google.com/document/d/1LQO5B_lDf3xaVSWZYI2jUqBVWe0w86uSbFnJLtHFEPg/edit?usp=sharing" external><i className="fa fa-file-text-o"/></NextLink>
+      {/*<NextLink href="https://docs.google.com/document/d/1LQO5B_lDf3xaVSWZYI2jUqBVWe0w86uSbFnJLtHFEPg/edit?usp=sharing" external><i className="fa fa-file-text-o"/></NextLink>*/}
     </Logos>
   </NavContainer>
 );
