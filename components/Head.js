@@ -3,9 +3,10 @@ import NextHead from 'next/head';
 
 const Head = () => (
   <NextHead>
-    <title>Alex Girard</title>
+    <title>Alexandra Girard</title>
     <meta name="description" content="Developer. Dancer. Robotics enthusiast. Coffee adict." />
-    <meta name="keywords" content="Developer,Frontend,Frontend Developer,Student,Waterloo,Code,Software Engineering" />
+    <meta name="keywords" content="Software Engineering,Developer,Frontend,Frontend Developer,Fullstack,Fullstack Developer,Student,Waterloo,Code" />
+    <link rel="icon" href="static/favicon.png" />
   </NextHead>
 );
 
