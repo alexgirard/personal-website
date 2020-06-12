@@ -7252,6 +7252,12 @@ nav {
     border-width: 3px 0 0 0; }
   .dropdown-item:first-child:hover, .dropdown-item:first-child.active, .dropdown-item:first-child:focus, .dropdown-item:last-child:hover, .dropdown-item:last-child.active, .dropdown-item:last-child:focus {
     border-radius: 0; }
+  .navbar-extra-extra {
+    display: none; }
+  .navbar-extra {
+    padding-right: 0.5rem; } }
+
+@media (max-width: 767px) {
   .navbar-extra {
     display: none; } }
 
