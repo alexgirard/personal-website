@@ -11,9 +11,9 @@ const Cursor = styled.a`
 
 const Info = () => (
   <Row className="navbar-extra">
-    Alexandra Girard
-    <span className="px-3">⚡</span>
-    <span className="pr-4 mr-1">
+    <span className="pr-3">Alexandra Girard</span>
+    <span className="pr-3 navbar-extra-extra">⚡</span>
+    <span className="pr-4 mr-1 navbar-extra-extra">
       <Clock />
     </span>
   </Row>
@@ -41,7 +41,7 @@ const DropdownSection = ({ openTab, section, info, window })=> (
 );
 
 const MenuBar = ({ menuDropdowns, openTab }) => (
-  <Navbar expand="lg" className="justify-content-between p-0">
+  <Navbar expand="md" className="justify-content-between p-0">
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">

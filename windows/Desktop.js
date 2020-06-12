@@ -1,7 +1,15 @@
 import React from 'react';
 import _ from 'lodash';
 import styled from 'styled-components';
-import Draggable from 'react-draggable';
+// import Draggable from 'react-draggable';
+
+import dynamic from 'next/dynamic'
+
+const Draggable = dynamic(
+  () => import('react-draggable'),
+  { ssr: false }
+);
+
 
 const Image = styled.img`
   max-height: 77px;

@@ -119,6 +119,16 @@ nav {
     border-radius: 0;
   }
 
+  .navbar-extra-extra {
+    display: none;
+  }
+
+  .navbar-extra {
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 767px) {
   .navbar-extra {
     display: none;
   }

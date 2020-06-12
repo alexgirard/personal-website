@@ -1,8 +1,15 @@
 import React from 'react';
 import _ from 'lodash';
 import styled from 'styled-components';
-import Draggable from 'react-draggable';
+// import Draggable from 'react-draggable';
 import { Container, Row } from 'react-bootstrap';
+
+import dynamic from 'next/dynamic';
+
+const Draggable = dynamic(
+  () => import('react-draggable'),
+  { ssr: false }
+);
 
 const WindowOutline = styled.div`
   box-shadow: 0.3rem 0.3rem 0 black;
