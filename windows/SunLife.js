@@ -3,8 +3,7 @@ import React from 'react';
 import Job from '../components/Job';
 
 const SunLife = props => (
-  <Job 
-    bg="#767AD7"
+  <Job
     link="https://www.sunlife.ca/en/"
     src="/static/sun_life_financial.png"
     alt="Sun Life logo"

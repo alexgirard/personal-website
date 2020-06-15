@@ -19,10 +19,13 @@ const Image = styled.img`
 `;
 
 const Extra = ({ extraData, openTab, ...restProps }) => (
-  <Window bg="#FF9B26" {...restProps}>
-    <Row>
+  <Window {...restProps}>
+    <Row className="justify-content-center">
       {_.map(extraData, ({ title, name, src, alt }) => (
-        <Cursor className="px-3 d-flex flex-column justify-content-center align-items-center" onClick={() => openTab(title)}>
+        <Cursor
+          className="px-3 d-flex flex-column justify-content-center align-items-center"
+          onClick={e => { e.stopPropagation(); openTab(title); }}
+        >
           <Image src={src} alt={alt} />
           <p className="pt-2 mb-0 text-center">{name}</p>
         </Cursor>

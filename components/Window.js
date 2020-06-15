@@ -28,6 +28,20 @@ const WindowOutline = styled.div`
   @media (min-width: 768px) {
     max-width: ${props => props.maxWidth || "940px"};
   }
+
+  @media (max-width: 576px) {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+  }
 `;
 
 const TitleBarOutline = styled.section`
@@ -35,6 +49,10 @@ const TitleBarOutline = styled.section`
   border-bottom: 3px solid black;
   border-radius: 3px 3px 0 0;
   position: relative;
+
+  @media (max-width: 576px) {    
+    border-radius: 0;
+  }
 `;
 
 const Bars = styled(Row)`
@@ -59,22 +77,27 @@ const DraggableWrapper = styled(Draggable)`
   display: ${props => props.disabled ? "none" : "block"};
 `;
 
-const Controls = ({ fg, title, minimizeTab, closeTab }) => (
+const Controls = ({ fg, title, minimizeTab, closeTab, openTab, mobileHistory, setHistory }) => (
   <ControlsWrapper>
     <FgWrapper fg={fg}>
-      <button onClick={() => closeTab(title)}>
+      <button className="d-none d-sm-inline" onClick={() => closeTab(title)}>
         <img src="/static/close.png" alt="close button" />
       </button>
-      <button onClick={() => minimizeTab(title)}>
+      <button className="d-none d-sm-inline" onClick={() => minimizeTab(title)}>
         <img src="/static/minimize.png" alt="minimize button" className="pl-2 mr-1" />
       </button>
+      {!!mobileHistory && (
+        <button className="d-sm-none pr-1" onClick={() => { openTab(mobileHistory); setHistory(null); }}>
+          <img src="/static/back.png" alt="back button" />
+        </button>
+      )}
     </FgWrapper>
   </ControlsWrapper>
 );
 
-const TitleBar = ({ fg, title, minimizeTab, closeTab, updateZ })=> (
+const TitleBar = ({ fg, title, minimizeTab, closeTab, updateZ, openTab, mobileHistory, setHistory })=> (
   <TitleBarOutline fg={fg} className="px-2 py-1 move" onMouseDown={() => updateZ(title)}>
-    <Controls fg={fg} title={title} minimizeTab={minimizeTab} closeTab={closeTab} />
+    <Controls fg={fg} title={title} minimizeTab={minimizeTab} closeTab={closeTab} openTab={openTab} mobileHistory={mobileHistory} setHistory={setHistory} />
     <Bars className="justify-content-center">
       <FgWrapper fg={fg}>{title}</FgWrapper>
     </Bars>
@@ -82,22 +105,42 @@ const TitleBar = ({ fg, title, minimizeTab, closeTab, updateZ })=> (
 );
 
 const Window = ({ bg, minimized, closed, children, maxWidth, globalZ, updateZ, title, ...titlebarProps }) => (
-  <DraggableWrapper handle="section" positionOffset={{x: '-50%', y: '-50%'}}>
+  <>
+    {/* Desktop */}
+    <div className="d-none d-sm-block">
+      <DraggableWrapper handle="section" positionOffset={{x: '-50%', y: '-50%'}}>
+        <WindowOutline 
+          bg={bg}
+          minimized={minimized}
+          closed={closed}
+          maxWidth={maxWidth}
+          globalZ={_.get(globalZ, title)}
+          className="p-0"
+          onClick={() => updateZ(title)}
+        >
+          <TitleBar title={title} updateZ={updateZ} {...titlebarProps} />
+          <Container className="p-4">
+            {children}
+          </Container>
+        </WindowOutline>
+      </DraggableWrapper>
+    </div>
+
+    {/* Mobile */}
     <WindowOutline 
-      bg={bg}
-      minimized={minimized}
-      closed={closed}
-      maxWidth={maxWidth}
-      globalZ={_.get(globalZ, title)}
-      className="p-0"
-      onClick={() => updateZ(title)}
-    >
-      <TitleBar title={title} updateZ={updateZ} {...titlebarProps} />
-      <Container className="p-4">
-        {children}
-      </Container>
-    </WindowOutline>
-  </DraggableWrapper>
+        bg={bg}
+        closed={closed}
+        maxWidth={maxWidth}
+        globalZ={_.get(globalZ, title)}
+        className="p-0 d-sm-none"
+        onClick={() => updateZ(title)}
+      >
+        <TitleBar title={title} updateZ={updateZ} {...titlebarProps} />
+        <Container className="p-4">
+          <>{children}</>
+        </Container>
+      </WindowOutline>
+  </>
 );
 
 export default Window;

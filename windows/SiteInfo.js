@@ -4,7 +4,7 @@ import NextLink from '../components/NextLink';
 import Window from '../components/Window';
 
 const SiteInfo = props => (
-  <Window bg="#FFFFFF" maxWidth="400px" {...props}>
+  <Window maxWidth="400px" {...props}>
     This design for this site took inspiration from the 
     {' '}<NextLink href="https://www.apple.com/" external><u>Classic Mac OS</u></NextLink>{' '}
     and was built using 

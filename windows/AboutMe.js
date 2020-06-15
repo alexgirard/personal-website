@@ -11,7 +11,7 @@ const AboutMe = ({ openTab, workData, extraData, ...props}) => {
   const [robotics, dance, site] = extraData;
   
   return (
-    <Window bg="#FFB1C4" {...props}>
+    <Window {...props}>
       <div className="d-flex flex-md-nowrap flex-wrap justify-content-center align-items-center px-2">
         <img src="/static/profile_photo.png" alt="profile photo" className="pl-md-2 pr-md-4" />
         <div className="pl-md-2 pt-3 pt-md-0">

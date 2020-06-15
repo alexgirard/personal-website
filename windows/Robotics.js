@@ -4,7 +4,7 @@ import NextLink from '../components/NextLink';
 import Window from '../components/Window';
 
 const Robotics = props => (
-  <Window bg="#D7F8FF" maxWidth="700px" {...props}>
+  <Window maxWidth="700px" {...props}>
     <h3><NextLink href="https://www.uwvexu.ca/" external>UWAT Vex U Robotics</NextLink></h3>
     <p>Design, build and program autonomous and driver-controlled robots for competition. Check out our student design team website 
       {' '}<u><NextLink href="https://www.uwvexu.ca/" external>here</NextLink></u>.

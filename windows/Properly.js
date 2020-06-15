@@ -3,8 +3,7 @@ import React from 'react';
 import Job from '../components/Job';
 
 const Properly = props => (
-  <Job 
-    bg="#1C7473"
+  <Job
     link="https://www.properly.ca/"
     src="/static/properly.png"
     alt="Properly logo"

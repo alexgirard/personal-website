@@ -3,8 +3,7 @@ import React from 'react';
 import Job from '../components/Job';
 
 const Zillow = props => (
-  <Job 
-    bg="#E2717C"
+  <Job
     link="https://www.zillow.com/"
     src="/static/zillow.png"
     alt="Zillow logo"

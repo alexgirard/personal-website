@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 import Window from '../components/Window';
 
 const Dance = props => (
-  <Window bg="#FFDCE5" maxWidth="700px" {...props}>
+  <Window maxWidth="700px" {...props}>
     In high school I danced competitvely in the styles ballet, pointe, contemporary, lyrical, 
     jazz and hip hop. Since university, I joined a female hip hop group, taught at a dance workshop, 
     and try to attend hip hop classes in between school. 

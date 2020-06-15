@@ -3,8 +3,7 @@ import React from 'react';
 import Job from '../components/Job';
 
 const Hockeystick = props => (
-  <Job 
-    bg="#2F9BFF"
+  <Job
     link="https://www.hockeystick.co/"
     src="/static/hockeystick.png"
     alt="Hockeystick logo"

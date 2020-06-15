@@ -10,7 +10,7 @@ const Image = styled.img`
 `;
 
 const Name = props => (
-  <Window bg="#FFC909" {...props}>
+  <Window {...props}>
     <Row className="d-flex justify-content-center align-items-center flex-wrap">
       <Image src="/static/word_art.png" alt="name word art" />
     </Row>

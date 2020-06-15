@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from "moment";
 
-const curTime = () => moment().format("ddd LT");
+const curTime = format => moment().format(format || "ddd LT");
 
 class Clock extends React.Component {
   state = {
@@ -17,7 +17,8 @@ class Clock extends React.Component {
   }
     
   tick() {
-    this.setState({date: curTime()});
+    const { format } = this.props;
+    this.setState({date: curTime(format)});
   }
   
   render() {
