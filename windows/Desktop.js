@@ -83,7 +83,7 @@ const Desktop = ({ tabs, clearTabs, openTab, mobileWindowOpen, openMobileWindow,
 
     {/* Mobile */}
     {!!mobileWindowOpen ? (
-      <MobileHome onClick={() => closeMobileWindow()}>⚡ HOME ⚡</MobileHome>
+      <MobileHome className="py-1" onClick={() => closeMobileWindow()}>⚡ HOME ⚡</MobileHome>
     ) : (
       <div className="m-3 d-sm-none">
         <MobileHotbar className="px-3 pt-2 pb-1 d-flex justify-content-around">

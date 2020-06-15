@@ -9,6 +9,14 @@ $font-color: #121517;
 
 #__next {
   height: 100%;
+  width: 100%;
+
+  // ios bottom bar fix
+  @media (max-width: 576px) {
+    position: fixed;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 html {

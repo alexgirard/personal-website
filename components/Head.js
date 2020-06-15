@@ -6,6 +6,7 @@ const Head = () => (
     <title>Alexandra Girard</title>
     <meta name="description" content="Developer. Dancer. Robotics enthusiast. Coffee adict." />
     <meta name="keywords" content="Software Engineering,Developer,Frontend,Frontend Developer,Fullstack,Fullstack Developer,Student,Waterloo,Code" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href="static/favicon.png" />
   </NextHead>
 );
