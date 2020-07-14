@@ -22,7 +22,7 @@ const Social = ({ socialLinks, ...restProps}) => (
   <Window {...restProps}>
     <Row className="px-3 text-center text-white justify-content-center flex-column flex-sm-row">
       {_.map(socialLinks, ({ name, link }) => (
-        <h5 className="m-0 py-3 py-sm-0">
+        <h5 className="m-0 py-3 py-sm-0" key={`social-${name}`}>
           <SocialLink href={link} external className="px-2">{name}</SocialLink>
           <span className="d-none d-sm-inline">/</span>
         </h5>

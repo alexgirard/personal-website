@@ -36,7 +36,8 @@ export default class MyDocument extends Document {
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-169178598-1"
-          />
+          >
+          </script>
           <script
             dangerouslySetInnerHTML={{
               __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -50,7 +51,8 @@ export default class MyDocument extends Document {
               </script>
               `
             }}
-          />
+          >
+          </script>
         </Head>
         <body>
           <Main />

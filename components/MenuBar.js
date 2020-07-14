@@ -33,7 +33,7 @@ const DropdownSection = ({ openTab, section, info, window })=> (
 
         const navProps = link ? { href: link, target: "_blank" } : { onClick: () => openTab(title) };
         return(
-          <Cursor className="dropdown-item" role="button" {...navProps}>
+          <Cursor className="dropdown-item" role="button" {...navProps} key={`dropdown-item-${name}`}>
               <Row className="justify-content-between py-1">
                 <div>{name}</div>
                 <>{`⌘${cmd}`}</>
@@ -52,7 +52,7 @@ const MenuBar = ({ menuDropdowns, openTab }) => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <>{_.map(menuDropdowns, section => <DropdownSection openTab={openTab} {...section} />)}</>
+          <>{_.map(menuDropdowns, section => <DropdownSection openTab={openTab} {...section} key={`${section.section}-dropdown`} />)}</>
           <Cursor href="mailto:alexgirard999@gmail.com" className="px-3 nav-link">Email</Cursor>
         </Nav>
       </Navbar.Collapse>

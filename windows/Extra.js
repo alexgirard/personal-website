@@ -25,6 +25,7 @@ const Extra = ({ extraData, openTab, ...restProps }) => (
         <Cursor
           className="px-3 d-flex flex-column justify-content-center align-items-center"
           onClick={e => { e.stopPropagation(); openTab(title); }}
+          key={`extra-${title}`}
         >
           <Image src={src} alt={alt} />
           <p className="pt-2 mb-0 text-center">{name}</p>

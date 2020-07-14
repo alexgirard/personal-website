@@ -72,7 +72,7 @@ const Desktop = ({ tabs, clearTabs, openTab, mobileWindowOpen, openMobileWindow,
     {/* Desktop */}
     <IconGroup top="3.5rem" className="flex-column justify-content-between d-none d-sm-flex">
       <div>
-        {_.map(tabs, tab => <DesktopIcon {...tab} onDoubleClick={openTab} />)}
+        {_.map(tabs, tab => <DesktopIcon {...tab} onDoubleClick={openTab} key={`desktop-icon-${tab.title}`} />)}
       </div>
       <div>
         <DesktopIcon title="Clear" src="/static/retro_bomb_icon.png" alt="Clear desktop" onClick={clearTabs} />
@@ -87,7 +87,7 @@ const Desktop = ({ tabs, clearTabs, openTab, mobileWindowOpen, openMobileWindow,
     ) : (
       <div className="m-3 d-sm-none">
         <MobileHotbar className="px-3 pt-2 pb-1 d-flex justify-content-around">
-            {_.map(tabs, tab => <MobileIcon {...tab} name={tab.title} bg={tab.fg} onClick={openMobileWindow} />)}
+            {_.map(tabs, tab => <MobileIcon {...tab} name={tab.title} bg={tab.fg} onClick={openMobileWindow} key={`mobile-icon-${tab.title}`} />)}
         </MobileHotbar>
       </div>
     )}
