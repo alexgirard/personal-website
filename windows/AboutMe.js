@@ -23,7 +23,7 @@ const AboutMe = ({ openTab, workData, extraData, ...props}) => {
             I’m passionate about web development and human-computer interaction design.
           </p>
 
-          <p>I'm an incoming Software Engineering Intern at <Open openTab={openTab} {...zillow}/>; previously, I've interned at <Open openTab={openTab} {...hockeystick}/>, <Open openTab={openTab} {...properly}/>, and <Open openTab={openTab} {...sunlife}/>.</p>
+          <p>I most recently interned as a Software Engineer at <Open openTab={openTab} {...zillow}/>; previously, I've interned at <Open openTab={openTab} {...hockeystick}/>, <Open openTab={openTab} {...properly}/>, and <Open openTab={openTab} {...sunlife}/>.</p>
           <p className="m-0">In my free time I love to take <Open openTab={openTab} {...dance}>hip hop classes</Open>, dabble in <Open openTab={openTab} {...robotics}>robotics</Open>, play some minecraft, and drink way to much coffee.</p>
         </div>
       </div>

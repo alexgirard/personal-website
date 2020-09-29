@@ -189,7 +189,7 @@ const Index = () => {
         <div className="d-flex flex-fill position-relative">
           <Tabs tabs={mobileApps} openMobileWindow={openMobileWindow} />
           
-          <Welcome     {...welcome}     closed={isClosedMobile(welcome.title)}      updateZ={updateZMobile} mobileHistory={mobileHistory} setHistory={setHistory} openTab={openMobileWindow} />
+          <Welcome     {...welcome}     closed={isClosedMobile(welcome.title)}      updateZ={updateZMobile} mobileHistory={mobileHistory} setHistory={setHistory} openTab={openMobileWindow} isMobile />
           <AboutMe     {...aboutme}     closed={isClosedMobile(aboutme.title)}      updateZ={updateZMobile} mobileHistory={mobileHistory} setHistory={setHistory} workData={workData} extraData={extraData} openTab={openMobileWindowBack(aboutme.title)} />
           <Name        {...name}        closed={isClosedMobile(name.title)}         updateZ={updateZMobile} mobileHistory={mobileHistory} setHistory={setHistory} openTab={openMobileWindow} />
   
