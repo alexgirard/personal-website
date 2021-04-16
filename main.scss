@@ -1,41 +1,50 @@
 @import "~bootstrap/scss/bootstrap";
-
-@font-face {
-  font-family: 'Chicago';
-  src: url('./static/Chicago.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&display=swap');
 
 $font-color: #121517;
 
 #__next {
   height: 100%;
   width: 100%;
-
-  // ios bottom bar fix
-  @media (max-width: 576px) {
-    position: fixed;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
 }
 
 html {
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
-  border: 3px solid black;
 }
 
 body {
-  font-family: Chicago;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   margin: 0;
-  background: url("/static/dot_bg.png") repeat;
   overflow: hidden;
   height: 100%;
   width: 100%;
   color: $font-color;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+  all: unset;
+  margin: 0;
+  display: block;
+}
+
+h1 { 
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 50px;
+}
+h2 { font-size: 46px; }
+h3 { font-size: 36px; }
+h4 { font-size: 26px; }
+h5 { font-size: 22px; }
+h6 { font-size: 20px; }
+p { font-size: 18px; }
+
+m { font-weight: 500; }
+b { font-weight: 600; }
 
 button {
   all: unset;
@@ -43,105 +52,33 @@ button {
 }
 
 a, a:hover {
-  color: $font-color !important;
+  color: inherit !important;
+  text-decoration: underline;
 }
 
 :focus {
   outline: none;
 }
 
-.move {
-  cursor: move;
-}
 
-nav {
-  background-color: #E2717C !important;
-  border-bottom: 3px solid black;
-}
+@media (min-width: 769px) and (max-width: 992) { }
 
-@media (min-width: 10px) {
-  .nav-link {
-    padding: 0.25rem 0.75rem !important;
+@media (min-width: 577px) and (max-width: 768px) {
+  h1 { 
+    font-size: 38px;
+    line-height: 38px;
   }
 }
 
-.nav-link {
-  color: #212529 !important;
-}
 
-.dropdown:hover {
-  background-color: #FFC909 !important;
-  box-shadow : 0 0 0 3px black;
-}
-
-.nav-link:hover, a[aria-expanded="true"] {
-  background-color: #FFC909 !important;
-  box-shadow : 0 0 0 3px black;
-}
-
-.dropdown-menu {
-  border-radius: 7px;
-  box-shadow: 0.3rem 0.3rem 0 black;
-  padding: 0;
-  margin-top: -0.5px;
-}
-
-.dropdown:hover>.dropdown-menu, .dropdown .show {
-  display: block;
-  background-color: #E2717C;
-  border: 3px solid black;
-}
-
-.dropdown-item:hover, .dropdown-item.active, .dropdown-item:focus {
-  color: $font-color !important;
-  background-color: #FFC909 !important;
-  box-shadow : 0 0 0 3px black;
-}
-
-.dropdown-item:first-child:hover, .dropdown-item:first-child.active, .dropdown-item:first-child:focus {
-  border-radius: 5px 5px 0 0;
-}
-
-.dropdown-item:last-child:hover, .dropdown-item:last-child.active, .dropdown-item:last-child:focus {
-  border-radius: 0 0 5px 5px;
-}
-
-.dropdown-divider {
-  margin: 0;
-  border-top: 3px dashed black !important;
-}
-
-.navbar-toggler {
-  color: black !important;
-  border: none;
-}
-
-@media (max-width: 991px) {
-  .dropdown-menu {
-    border-radius: 0;
-    box-shadow: none;
+@media (max-width: 576px) {
+  h1 { 
+    font-size: 28px;
+    line-height: 28px;
   }
-
-  .dropdown:hover>.dropdown-menu, .dropdown .show {
-    border: solid black;
-    border-width: 3px 0 0 0;
-  }
-
-  .dropdown-item:first-child:hover, .dropdown-item:first-child.active, .dropdown-item:first-child:focus, .dropdown-item:last-child:hover, .dropdown-item:last-child.active, .dropdown-item:last-child:focus {
-    border-radius: 0;
-  }
-
-  .navbar-extra-extra {
-    display: none;
-  }
-
-  .navbar-extra {
-    padding-right: 0.5rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .navbar-extra {
-    display: none;
-  }
+  h2 { font-size: 24px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 18px; }
+  h5 { font-size: 16px; }
+  p { font-size: 16px; }
 }
