@@ -1,3 +1,21 @@
+export const menuItems = {
+  '/': 'Home',
+  about: 'About',
+  experience: 'Experience',
+  projects: 'Projects',
+  // extra: 'Extra',
+  contact: 'Contact',
+};
+
+export const menuLinks = {
+  Home: '/',
+  About: '/about',
+  Experience: '/experience',
+  Projects: '/projects',
+  // Extra: '/extra',
+  Contact: '/contact',
+}
+
 export const windows = {
   home: { n: 'Work', e: 'Social', s: 'About', w: 'Extra', next: 'About', color: '#E2B1FF', title: 'Alexandra Girard', textColor: '#C675F6' },
   about: { n: 'Home', e: 'Social', s: 'Work', w: 'Extra', next: 'Work', color: '#38D1D1', title: 'About Me' },
@@ -65,4 +83,5 @@ export const links = {
   github: 'https://github.com/alexgirard',
   spotify: 'https://open.spotify.com/user/alexgirard9',
   yourstack: 'https://yourstack.com/@alex_girard9',
+  calendly: 'https://calendly.com/alexgirard/30-min-meeting',
 }

@@ -1,55 +1,76 @@
 import React from 'react';
 import _ from 'lodash';
+import styled from 'styled-components';
 
-import Window from '../components/Window';
-import Photo from '../components/Photo';
 import Heading from '../components/Heading';
+import { TextFrame, PictureFrame } from '../components/Frame';
+import PageTemplate from '../components/PageTemplate';
 
-import Link from '../components/NextLink';
-import { windows, work } from '../util/constants';
 import '../main.scss';
 
-const Experience = () => {
-  const { about } = windows;
-  const { twitch, splunk, zillow, hockeystick, properly, sunlife } = work;
+const StyledLink = styled.a`
+  :hover {
+    color: #F2C531 !important;
+  }
+`;
+
+const Grid = styled.div`
+  display: grid;
+  max-width: 66em;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4em; 
+
+  @media (min-width: 941px) and (max-width: 1100px) { gap: 4em; }
+
+  @media (max-width: 940px) {
+    grid-template-columns: 1fr;
+    gap: 3em;
+
+    div:nth-of-type(3) { order: 4; }
+    div:nth-of-type(4) { order: 3; }
+  }
+`;
+
+const About = () => {
 
   return (
-    <Window {...about}>
-      <div className="row m-0 justify-content-center">
-        <div className="col d-none d-xl-flex">
-          <Photo src="/static/alexgirardwaterfall.png" color={about.color} />
-        </div>
-        <div className="col d-flex align-items-center">
-          <div>
-            <Heading tag="h5">
-              Hi, I’m Alexandra Girard! I’m a fourth year Software Engineering student at the 
-              <Link href="https://uwaterloo.ca/" sb external>University of Waterloo</Link>. 
-              I’m passionate about web development and human-computer interaction design.
-            </Heading>
-            <Heading tag="h5" mt="1.5rem">
-              Previously, I’ve worked at <Link href={splunk.href} sb external>Splunk</Link>,
-              <Link href={zillow.href} sb external>Zillow</Link>,
-              <Link href={hockeystick.href} sb external>Hockeystick</Link>,
-              <Link href={properly.href} sb sa external>Properly</Link> and
-              <Link href={sunlife.href} sb sa external>Sun Life Financial.</Link>
-              <Heading tag="span" color={about.color}>
-                <b>
-                  I’ll be joining <Link href={twitch.href} sb sa external>Twitch</Link>
-                  this summer as a Software Engeering Intern.
-                  {' '}
-                  <img src="/static/bleed_purple.jpg" height="28" />
-                </b>
-              </Heading>
-            </Heading>
-            <Heading tag="h5" mt="1.5rem">
-              In my free time I love to take hip hop classes, dabble in robotics, play 
-              Minecraft, and drink too much coffee.
-            </Heading>
-          </div>
-        </div>
-      </div>
-    </Window>
+    <PageTemplate curPage="about">
+      <Heading fontFamily="Manier" tag="h2" className="mb-4 mb-md-5">About Me</Heading>
+      <Grid className="pb-4">
+        <TextFrame maxWidth="100%" h="100%" hOverride>
+          <p>
+            Hi, I’m Alexandra Girard! I just graduated from the 
+            {' '}
+            <StyledLink href="https://uwaterloo.ca/" external>
+              University of Waterloo
+            </StyledLink>
+            {' '}
+            with a degree in Software Engineering and specialization 
+            in human-computer interaction.
+          </p>
+        </TextFrame>
+        <PictureFrame
+          bg="#F12386"
+          fg="url('/static/pics/alex_museum.jpg') no-repeat 50% 40%/cover"
+          minHeight="300px"
+          maxWidth="100%"
+        />
+        <PictureFrame
+          bg="#38D1D1"
+          fg="url('/static/pics/alex_sf.jpg') no-repeat 50% 35%/cover"
+          minHeight="300px"
+          maxWidth="100%"
+        />
+        <TextFrame maxWidth="100%" h="100%" hOverride>
+          <p>
+            When I’m not coding, you can find me taking contemporary 
+            or hip hop drop-in dance classes, playing Valorant or Minecraft with friends, 
+            or drinking way too much coffee ☕
+          </p>
+        </TextFrame>
+      </Grid>
+    </PageTemplate>
   );
 };
 
-export default Experience;
+export default About;

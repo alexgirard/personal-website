@@ -8,17 +8,17 @@ const Wrapper = styled.div`
   ${props => props.maxHeight && `max-height: ${props.maxHeight}`};
   ${props => props.maxWidth && `max-width: ${props.maxWidth}`};
 
-  margin: ${props => props.m || '0px'};
-  margin-top: ${props => props.mt || '0px'};
-  margin-bottom: ${props => props.mb || '0px'};
-  margin-left: ${props => props.ml || '0px'};
-  margin-right: ${props => props.mr || '0px'};
+  margin: ${props => props.m};
+  margin-top: ${props => props.mt};
+  margin-bottom: ${props => props.mb};
+  margin-left: ${props => props.ml};
+  margin-right: ${props => props.mr};
 
-  padding: ${props => props.p || '0px'};
-  padding-top: ${props => props.pt || '0px'};
-  padding-bottom: ${props => props.pb || '0px'};
-  padding-left: ${props => props.pl || '0px'};
-  padding-right: ${props => props.pr || '0px'};
+  padding: ${props => props.p};
+  padding-top: ${props => props.pt};
+  padding-bottom: ${props => props.pb};
+  padding-left: ${props => props.pl};
+  padding-right: ${props => props.pr};
 `;
 
 const Container = ({ children, ...props }) => (

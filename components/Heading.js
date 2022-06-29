@@ -17,15 +17,18 @@ const Wrapper = styled.span`
     padding-bottom: ${props => props.pb || '0px'};
     padding-left: ${props => props.pl || '0px'};
     padding-right: ${props => props.pr || '0px'};
+
+    font-weight: ${props => props.fontWeight || '400'};
+    font-family: ${props => props.fontFamily || 'Rubik'};
   }
 `;
 
-const Heading = ({ tag, children, ...props }) => {
+const Heading = ({ tag, children, className, ...props }) => {
   const Tag = tag;
 
   return (
     <Wrapper {...props}>
-      <Tag>{children}</Tag>
+      <Tag className={className}>{children}</Tag>
     </Wrapper>
   );
  };

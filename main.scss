@@ -1,7 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
-$font-color: #121517;
+@font-face {
+  font-family: "Manier";
+  src: url("./static/fonts/manier-medium.eot");
+  src: url("./static/fonts/manier-medium.eot?#iefix") format("embedded-opentype"),
+    url("./static/fonts/manier-medium.woff2") format("woff2"), url("./static/fonts/manier-medium.woff") format("woff"),
+    url("./static/fonts/manier-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+$font-color: #000000;
 
 #__next {
   height: 100%;
@@ -15,7 +25,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik';;
   font-weight: 400;
   font-size: 18px;
   margin: 0;
@@ -32,16 +42,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 { 
-  font-size: 56px;
+  font-size: 96px;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 100px;
 }
-h2 { font-size: 46px; }
-h3 { font-size: 36px; }
-h4 { font-size: 26px; }
-h5 { font-size: 22px; }
-h6 { font-size: 20px; }
-p { font-size: 18px; }
+h2 { font-size: 34px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+// h5 { font-size: 22px; }
+h6 { font-size: 18px; }
+p { font-size: 20px; }
 
 m { font-weight: 500; }
 b { font-weight: 600; }
@@ -63,18 +73,19 @@ a, a:hover {
 
 @media (min-width: 769px) and (max-width: 992) { }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 860px) {
   h1 { 
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 80px;
+    line-height: 80px;
   }
+  h2 { font-size: 28px; }
 }
 
 
 @media (max-width: 576px) {
   h1 { 
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 60px;
+    line-height: 60px;
   }
   h2 { font-size: 24px; }
   h3 { font-size: 24px; }

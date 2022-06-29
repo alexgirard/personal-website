@@ -2,69 +2,136 @@ import React from 'react';
 import _ from 'lodash';
 import styled from 'styled-components';
 
-import Window from '../components/Window';
-import Heading from '../components/Heading';
-import { PurePhoto } from '../components/Photo';
-
 import Link from '../components/NextLink';
-import { windows, work } from '../util/constants';
+import Heading from '../components/Heading';
+import { TextFrame as Frame } from '../components/Frame';
+import PageTemplate from '../components/PageTemplate';
+
+import { work } from '../util/constants';
 import '../main.scss';
 
-const workInfo = _.groupBy(work, w => (new Date(w.start)).getFullYear());
-const years = _.keys(workInfo).sort((a,b) => b - a);
+const { twitch, splunk, zillow, hockeystick, properly, sunlife } = work;
 
-const Grid = styled.div`
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 34px 74px auto;
-
-  @media (max-width: 576px) {
-    grid-gap: 1rem;
-    grid-template-columns: 40px 60px auto;
-  }
+const TextFrame = styled(Frame)`
+  cursor: pointer;
 `;
 
-const About = () => {
-  const { experience } = windows;
+const Job = (tagline, job) => (
+  <div className="d-flex flex-column gap-3">
+    <Heading tag="h6" fontWeight="300">{tagline}</Heading>
+    <Heading tag="h3" fontWeight="500">{job}</Heading>
+  </div>
+);
+
+const Experience = () => {
+  const p = '3em 2.5em';
 
   return (
-    <Window {...experience}>
-      <Grid>
-        {years.map(year => {
-          const works = workInfo[year];
-          const today = new Date();
-
-          return works.map(({ title, role, href, start, src }, iter) => {
-            const startDate = new Date(start);
-            const incoming = today.setHours(0, 0, 0, 0) <= startDate.setHours(0, 0, 0, 0);
-            
-            return (
-              <>
-                <div className="d-flex align-items-start justify-content-end">
-                  {iter === 0 && <b><Heading tag="h5" color={experience.color}>{year}</Heading></b>}
-                </div>
-                <div className="d-flex align-items-center justify-content-center">
-                  <Link href={href} external className="d-flex justify-content-center">
-                    {/* <div className="d-block d-sm-none"><PurePhoto src={src} maxWidth={50}/></div>
-                    <div className="d-none d-sm-block"><PurePhoto src={src} maxWidth={74}/></div> */}
-                    <PurePhoto src={src} maxWidth={74}/>
-                  </Link>
-                </div>
-                <div className="d-flex align-items-center justify-content-start">
-                  <div>
-                    <Link href={href} external noUnderline>
-                      <b><Heading tag="h5">{title}</Heading></b>
-                    </Link>
-                    <Heading tag="p">{`${incoming ? 'Incoming ' : ''}${role}`}</Heading>
-                  </div>
-                </div>
-              </>
-            );
-          });
-        })}
-      </Grid>
-    </Window>
+    <PageTemplate curPage="experience">
+      <Heading fontFamily="Manier" tag="h2" className="mb-4 mb-md-5">Experience</Heading>
+      <div className="d-flex flex-column gap-5 pb-4">
+        <div className="col-sm-12">
+          <Link href={twitch.href} external noUnderline>
+            <TextFrame
+              maxWidth="100%"
+              alignItems="start"
+              p={p}
+              hoverColor="white"
+              hoverBg="url('/static/companies/twitch.gif') no-repeat 70% 50%/cover"
+            >
+              {Job('INCOMING FULL-TIME 2022', 'Twitch  - Full Stack Developer - Ad Experience Team')}
+            </TextFrame>
+          </Link>
+        </div>
+        <div className="d-flex flex-wrap gap-5">
+          <div className="col-12 col-md-4">
+            <Link href={twitch.href} external noUnderline>
+              <TextFrame
+                h="100%"
+                maxWidth="100%"
+                alignItems="start"
+                p={p}
+                hoverColor="white"
+                hoverBg="url('/static/companies/twitch2.gif') no-repeat 50% 50%/cover"
+              >
+                {Job('INTERNSHIP 2021', 'Twitch - Software Developer')}
+              </TextFrame>
+            </Link>
+          </div>
+          <div className="col d-flex flex-wrap flex-column gap-5">
+            <div className="col-12">
+              <Link href={splunk.href} external noUnderline>
+                <TextFrame
+                  maxWidth="100%"
+                  alignItems="start"
+                  p={p}
+                  hoverColor="white"
+                  hoverBg="url('/static/companies/splunk.jpg') no-repeat 50% 10%/cover"
+                >
+                  {Job('INTERNSHIP 2021', 'Splunk - Frontend Developer')}
+                </TextFrame>
+              </Link>
+            </div>
+            <div className="col-12">
+              <Link href={zillow.href} external noUnderline>
+                <TextFrame
+                  maxWidth="100%"
+                  alignItems="start"
+                  p={p}
+                  hoverColor="white"
+                  hoverBg="url('/static/companies/zillow.jpg') no-repeat 50% 50%/cover"
+                >
+                  {Job('INTERNSHIP 2020', 'Zillow - Software Developer')}
+                </TextFrame>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="d-flex flex-wrap gap-5">
+          <div className="col-12 col-md">
+            <Link href={hockeystick.href} external noUnderline>
+              <TextFrame
+                h="100%"
+                maxWidth="100%"
+                alignItems="start"
+                p={p}
+                hoverColor="white"
+                hoverBg="url('/static/companies/hockeystick.jpg') no-repeat 90% 50%/cover">
+                {Job('INTERNSHIP 2019', 'Hockeystick - Frontend Developer')}
+              </TextFrame>
+            </Link>
+          </div>
+          <div className="col-12 col-md">
+            <Link href={properly.href} external noUnderline>
+            <TextFrame
+              h="100%"
+              maxWidth="100%"
+              alignItems="start"
+              p={p}
+              hoverColor="white"
+              hoverBg="url('/static/companies/properly.jpg') no-repeat 50% 50%/cover"
+            >
+              {Job('INTERNSHIP 2019', 'Properly - Full Stack Developer')}
+            </TextFrame>
+            </Link>
+          </div>
+          <div className="col-12 col-md">
+            <Link href={sunlife.href} external noUnderline>
+              <TextFrame
+                h="100%"
+                maxWidth="100%"
+                alignItems="start"
+                p={p}
+                hoverColor="white"
+                hoverBg="url('/static/companies/sunlife.jpg') no-repeat 90% 50%/cover">
+                {Job('INTERNSHIP 2018', 'Sun Life Financial - Applications Developer')}
+              </TextFrame>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </PageTemplate>
   );
 };
 
-export default About;
+export default Experience;
